@@ -1,0 +1,150 @@
+# Finance-Skill
+
+> 一组用于金融分析的 Claude Skills。每个 skill 是一个独立模块,可单独安装、组合使用。
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Skills](https://img.shields.io/badge/Skills-2-blue)](./skills)
+
+---
+
+## 📚 Skills 一览
+
+| Skill | 用途 | 状态 |
+|---|---|---|
+| [`daily-portfolio-review`](./skills/daily-portfolio-review) | 每日证券账户复盘:盈亏归因、组合 Beta、Alpha 分解、当日新闻、催化剂日历、交易行为复盘 | ✅ v0.2.0 |
+| [`comex-delivery-analysis`](./skills/comex-delivery-analysis) | CME/COMEX 金属期货交割报告分析:Issuer / Client Short / House Short 三栏数据提取与市场结构判读 | ✅ Stable |
+
+> 后续会持续添加更多 skills,关注 [CHANGELOG](./CHANGELOG.md)。
+
+---
+
+## 🚀 快速安装
+
+### 安装全部 skills(Claude Code)
+
+```bash
+git clone https://github.com/JerryGou96/Finance-Skill.git
+cd Finance-Skill
+./install.sh
+```
+
+### 只安装某一个
+
+```bash
+./install.sh daily-portfolio-review
+# 或
+./install.sh comex-delivery-analysis
+```
+
+### 自定义安装路径
+
+```bash
+./install.sh daily-portfolio-review /custom/path/to/skills
+```
+
+### Claude.ai(网页 / App)
+
+每个 skill 文件夹可以单独打成 zip 上传。从 [GitHub Releases](https://github.com/JerryGou96/Finance-Skill/releases) 下载预打包好的 zip 也可以(Release 流程会自动为每个 skill 打单独的 zip)。
+
+> 具体上传入口可能因产品更新有变,以 [Anthropic 官方文档](https://docs.claude.com) 为准。
+
+---
+
+## 🗂️ Repo 结构
+
+```
+Finance-Skill/
+├── README.md                              # 本文档
+├── LICENSE                                # MIT
+├── CHANGELOG.md                           # 全 repo 版本变更
+├── CONTRIBUTING.md                        # 贡献指南
+├── install.sh                             # 安装脚本(支持单个/全部)
+├── .gitignore
+├── .github/
+│   └── workflows/
+│       ├── lint.yml                       # PR 时自动校验 skill 结构
+│       └── release.yml                    # 打 tag 时自动打包 release
+└── skills/
+    ├── daily-portfolio-review/
+    │   ├── SKILL.md
+    │   ├── references/
+    │   │   ├── sector-mapping.md
+    │   │   └── catalyst-types.md
+    │   └── assets/
+    │       └── report-template.md
+    └── comex-delivery-analysis/
+        └── SKILL.md
+```
+
+---
+
+## 📦 单个 Skill 的详情
+
+### `daily-portfolio-review`
+
+每日证券账户复盘 skill。**8 节结构化日报**:
+
+| 节 | 内容 |
+|---|---|
+| 0 | Header(总市值 / 净盈亏 / 佣金 / vs SPY、QQQ) |
+| 1 | 组合风险画像(加权 Beta、HHI、板块暴露) |
+| 2 | 当日盈亏归因(扣除佣金) |
+| 3 | 持仓相对表现(Alpha 视角) |
+| 4 | 当日新闻 + 走势-新闻一致性 |
+| 5 | 催化剂日历(未来 4-8 周) |
+| 6 | 交易行为复盘 |
+| 7 | 明日观察清单 |
+
+详见 [skills/daily-portfolio-review/SKILL.md](./skills/daily-portfolio-review/SKILL.md)。
+
+### `comex-delivery-analysis`
+
+CME/COMEX 金属期货交割报告分析 skill,处理 Silver / Gold / Copper / Platinum / Palladium / Aluminum 的月度交割数据。覆盖:
+
+- 三栏数据提取(Issuer / Client Short / House Short)
+- 集中度分析(HHI、Top 3/5 比例)
+- 客户 vs 交易所交割平衡(Client-to-House Ratio)
+- 供需信号判读
+- 月环比对比
+
+详见 [skills/comex-delivery-analysis/SKILL.md](./skills/comex-delivery-analysis/SKILL.md)。
+
+---
+
+## 🛠️ 开发与贡献
+
+欢迎 issue 和 PR。新 skill 的添加流程:
+
+1. 在 `skills/` 下创建新文件夹(名字与 SKILL.md 的 `name` 字段一致)
+2. 至少包含一个 `SKILL.md`,顶部 YAML frontmatter 包含 `name` 和 `description`
+3. 复杂 skill 可以加 `references/`、`assets/`、`scripts/` 子目录
+4. 更新顶层 README 的 "Skills 一览" 表格
+5. 更新 `CHANGELOG.md`
+6. push 时 GitHub Actions 会自动校验结构
+
+详见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+
+---
+
+## 🔐 隐私与安全
+
+- 所有 skills **不存储**任何账户数据,所有数据在对话中处理
+- skills **不提供买卖建议**,只做事实陈述和中性归因
+- 不替代税务、合规、法律或投资顾问意见
+- `.gitignore` 已配置过滤 `*.csv` / `*.xlsx` / `account-snapshots/` 等,防止意外提交真实数据
+
+---
+
+## 📜 License
+
+MIT — 详见 [LICENSE](./LICENSE)。
+
+---
+
+## 🙏 致谢
+
+基于 [Anthropic Claude Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview) 框架。
+
+---
+
+*Disclaimer: 本 repo 中的 skills 仅为辅助分析工具,所有投资决策由用户自行承担。*
