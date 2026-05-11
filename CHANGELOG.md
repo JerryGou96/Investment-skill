@@ -10,6 +10,9 @@ This is a monorepo containing multiple Claude Skills. Changes are grouped by ski
 
 ## [Unreleased]
 
+### Added
+- **`nfp-labor-market-analysis`** skill 加入 monorepo: 用 JJ-Macro 的劳动力市场框架分析美国 Employment Situation / Nonfarm Payrolls,覆盖企业调查 vs 家庭调查拆分、失业率分解、劳动力供需信号分类及 Fed/市场影响。
+
 ## [0.2.0] - 2026-05-02
 
 ### Added

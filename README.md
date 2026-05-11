@@ -3,7 +3,7 @@
 > 一组用于金融分析的 Claude Skills。每个 skill 是一个独立模块,可单独安装、组合使用。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Skills](https://img.shields.io/badge/Skills-2-blue)](./skills)
+[![Skills](https://img.shields.io/badge/Skills-3-blue)](./skills)
 
 ---
 
@@ -13,6 +13,7 @@
 |---|---|---|
 | [`daily-portfolio-review`](./skills/daily-portfolio-review) | 每日证券账户复盘:盈亏归因、组合 Beta、Alpha 分解、当日新闻、催化剂日历、交易行为复盘 | ✅ v0.2.0 |
 | [`comex-delivery-analysis`](./skills/comex-delivery-analysis) | CME/COMEX 金属期货交割报告分析:Issuer / Client Short / House Short 三栏数据提取与市场结构判读 | ✅ Stable |
+| [`nfp-labor-market-analysis`](./skills/nfp-labor-market-analysis) | 美国非农 / Employment Situation 分析:企业调查与家庭调查拆分、失业率分解、劳动力供给/需求信号、Fed 与市场影响 | ✅ Stable |
 
 > 后续会持续添加更多 skills,关注 [CHANGELOG](./CHANGELOG.md)。
 
@@ -34,6 +35,8 @@ cd Finance-Skill
 ./install.sh daily-portfolio-review
 # 或
 ./install.sh comex-delivery-analysis
+# 或
+./install.sh nfp-labor-market-analysis
 ```
 
 ### 自定义安装路径
@@ -72,8 +75,12 @@ Finance-Skill/
     │   │   └── catalyst-types.md
     │   └── assets/
     │       └── report-template.md
-    └── comex-delivery-analysis/
-        └── SKILL.md
+    ├── comex-delivery-analysis/
+    │   └── SKILL.md
+    └── nfp-labor-market-analysis/
+        ├── SKILL.md
+        └── references/
+            └── nfp-framework.md
 ```
 
 ---
@@ -108,6 +115,18 @@ CME/COMEX 金属期货交割报告分析 skill,处理 Silver / Gold / Copper / P
 - 月环比对比
 
 详见 [skills/comex-delivery-analysis/SKILL.md](./skills/comex-delivery-analysis/SKILL.md)。
+
+### `nfp-labor-market-analysis`
+
+美国 Employment Situation / Nonfarm Payrolls 分析 skill,用 JJ-Macro 的劳动力市场框架拆解非农报告。覆盖:
+
+- 官方 BLS 数据优先校验
+- Establishment Survey vs Household Survey 拆分
+- 失业率变化分解:就业人口、失业人口、劳动力人口、退出劳动力人口
+- 劳动力信号分类:健康供给扩张、需求降温、隐藏疲弱、再加速/过热、衰退式恶化
+- Fed、美债/美元、美股、加密/黄金、行业轮动影响
+
+详见 [skills/nfp-labor-market-analysis/SKILL.md](./skills/nfp-labor-market-analysis/SKILL.md)。
 
 ---
 
