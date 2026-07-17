@@ -1,6 +1,6 @@
 ---
 name: analyze-equity-rotation
-description: Analyze current or historical equity-market sector rotation beyond traditional GICS sectors, with a detailed AI industry-chain rotation map, breadth, relative strength, fundamentals, catalysts, and confirmation levels. Use when the user asks about today's market, sector or style rotation, AI-internal rotation, market breadth, a technology daily-report rotation section, whether money is moving between AI hardware and software, or a repeatable rotation dashboard or score from live or supplied data.
+description: Analyze current or historical equity-market sector rotation beyond traditional GICS sectors, with a detailed AI industry-chain rotation map including semiconductor equipment, breadth, relative strength, fundamentals, catalysts, and confirmation levels. Use when the user asks about today's market, sector or style rotation, AI-internal rotation, market breadth, a technology daily-report rotation section, whether money is moving between AI hardware and software, or a repeatable rotation dashboard or score from live or supplied data.
 ---
 
 # Analyze Equity Rotation
@@ -18,7 +18,7 @@ Produce an evidence-backed rotation map that distinguishes a one-day move from a
 
 1. Establish the market regime with broad, equal-weight, size, growth/value, volatility, rates, dollar, credit, and breadth data.
 2. Rank traditional sectors by absolute return and relative return versus SPY over 1-day, 5-day, 20-day, and 60-day windows when verified history is available.
-3. Build AI sub-sector baskets and compare both market-cap-weighted and equal-weight behavior. Read [references/framework.md](references/framework.md) for the taxonomy, starter universe, and scoring system.
+3. Build AI sub-sector baskets and compare both market-cap-weighted and equal-weight behavior. Treat semiconductor equipment as a first-class group distinct from foundry/packaging and compute. Read [references/framework.md](references/framework.md) for the taxonomy, starter universe, and scoring system.
 4. Check breadth, volume confirmation, leader/laggard dispersion, and whether second-line stocks confirm the leaders.
 5. Separate price action from fundamental evidence such as revenue or EPS revisions, capex, orders, shipment timing, capacity, validation, and margins.
 6. Attribute plausible catalysts using company IR, government releases, exchange data, and reputable reporting. Label inference as inference; do not invent causal explanations.
@@ -35,6 +35,7 @@ Produce an evidence-backed rotation map that distinguishes a one-day move from a
 - Do not call hardware-to-software rotation from one software winner. Require basket-level relative strength and breadth confirmation.
 - Use equal-weight baskets to test participation; use market-cap-weighted indexes to measure index impact.
 - Avoid double counting a company across AI baskets. Assign a primary exposure for scoring and mention secondary exposure separately.
+- Do not merge semiconductor equipment into foundry/packaging. Evaluate equipment through wafer-fab capex, process intensity, bookings, backlog, export controls, and advanced-packaging/test demand.
 - Treat ETFs as imperfect proxies. For narrow AI themes, prefer transparent custom baskets with at least three representative names when possible.
 - Distinguish `good fundamentals / weak price` as expectations or positioning pressure, not automatically as a broken thesis.
 - Distinguish relative strength from absolute strength. A group that falls less is defensive, not necessarily receiving positive inflows.
