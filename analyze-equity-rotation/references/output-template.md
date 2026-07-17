@@ -36,7 +36,9 @@ Show:
 
 | AI sub-sector | Representative basket | Equal-weight 1D | 5D | 20D relative | Breadth | State |
 
-Cover at least compute, memory, optical connectivity, networking, power/cooling, cloud/neocloud, and software/applications when relevant. Add foundry/equipment, PCB/interconnect, systems, energy, or robotics when material.
+Cover at least compute, foundry/packaging, semiconductor equipment, memory, optical connectivity, networking, power/cooling, cloud/neocloud, and software/applications when relevant. Add PCB/interconnect, systems, energy, or robotics when material.
+
+Always give semiconductor equipment its own row. Do not combine it with foundry/packaging. When the data permits, compare the liquid core equipment basket (verified ASML, AMAT, LRCX and KLAC) with advanced-packaging inspection/test names, and state whether capex, bookings or backlog confirm the price move.
 
 For the three most important groups, explain:
 
