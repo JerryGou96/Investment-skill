@@ -57,7 +57,7 @@ Use custom equal-weight baskets because many narrow themes lack clean ETFs. Pref
 |---|---|---|
 | Compute | GPU, CPU, ASIC accelerators | NVDA, AMD, AVGO |
 | Foundry and packaging | Leading-edge wafer and advanced packaging | TSM, INTC, AMKR |
-| Semiconductor equipment | Lithography, deposition, etch, inspection | ASML, AMAT, LRCX, KLAC |
+| Semiconductor equipment | Lithography, deposition, etch, cleaning, inspection/metrology, advanced packaging and test | ASML, AMAT, LRCX, KLAC, ONTO, CAMT, TER, COHU |
 | Memory and storage | HBM/DRAM, NAND, HDD, enterprise storage | MU, SNDK, WDC, STX |
 | Optical connectivity | 800G/1.6T, EML/DFB, silicon photonics, coherent/DCI | COHR, LITE, CIEN, MTSI, GLW |
 | Networking | Switch silicon, Ethernet/InfiniBand, DPU/NIC | ANET, MRVL, AVGO, CSCO |
@@ -71,6 +71,36 @@ Use custom equal-weight baskets because many narrow themes lack clean ETFs. Pref
 | Robotics and edge AI | Industrial automation, robotics, edge processors | Build a verified basket appropriate to the market requested |
 
 Assign each company to one primary basket for scoring. Mention secondary exposures qualitatively.
+
+### Semiconductor equipment is a required independent group
+
+Do not fold semiconductor equipment into foundry/packaging. Its earnings and price cycle is driven by wafer-fab equipment spending, process complexity, capacity additions, memory/logic mix, advanced packaging, export controls, bookings, backlog, and service revenue. It can therefore lead or lag foundries and chip designers.
+
+When data permits, split the group into:
+
+- Lithography: verify ASML and relevant regional suppliers
+- Deposition and etch: verify AMAT, LRCX and relevant regional suppliers
+- Inspection and metrology: verify KLAC, ONTO, CAMT and relevant regional suppliers
+- Cleaning and thermal processing: build a verified regional basket
+- Advanced packaging, bonding and assembly equipment: verify KLIC, BESI and direct peers
+- Test and handlers: verify TER, COHU and direct peers
+
+Use ASML, AMAT, LRCX and KLAC as a liquid core basket only after checking current listings and exposures. Add ONTO/CAMT for advanced-packaging inspection and TER/COHU for test when the requested scope warrants it. Do not treat SOXX or SMH as pure equipment proxies because chip designers and manufacturers dominate them.
+
+For fundamental confirmation, track:
+
+- Foundry, logic and memory capex revisions
+- Equipment bookings, backlog, shipment timing and service growth
+- Leading-edge node and layer-count intensity
+- Advanced-packaging capacity and hybrid-bonding adoption
+- China revenue exposure and export-control changes
+- Utilization recovery at memory and mature-node fabs
+
+Interpretation examples:
+
+- Equipment outperforming compute and foundry over 5-day and 20-day windows, with rising capex or bookings, supports upstream capex expansion.
+- Equipment falling less during an AI selloff is only relative defense unless absolute price, breadth and revisions improve.
+- Strong foundry demand with weak equipment orders can mean existing capacity is sufficient, capex is delayed, or expectations were already priced; investigate before inferring a broken AI thesis.
 
 For deeper optical analysis, optionally split into:
 
