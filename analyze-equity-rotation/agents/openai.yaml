@@ -1,0 +1,12 @@
+interface:
+  display_name: Equity Rotation Analyzer
+  short_description: Analyze market and AI sector rotation with evidence
+  default_prompt: "Use $analyze-equity-rotation to analyze today\u2019s equity market\
+    \ and AI-sector rotation."
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
