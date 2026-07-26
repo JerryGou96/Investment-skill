@@ -11,6 +11,7 @@ This is a monorepo containing multiple Claude Skills. Changes are grouped by ski
 ## [Unreleased]
 
 ### Added
+- **`us-weekly-cross-asset-recap`** skill v2.1.0 加入 monorepo: 生成经过实时核验、面向交易决策的中文美股跨资产周报，覆盖主要指数、11 个行业板块、美债利率、美元、商品、加密货币、波动率、信用市场、AI/软件轮动、下周催化剂及条件式交易剧本。
 - **`nfp-labor-market-analysis`** skill 加入 monorepo: 用 JJ-Macro 的劳动力市场框架分析美国 Employment Situation / Nonfarm Payrolls,覆盖企业调查 vs 家庭调查拆分、失业率分解、劳动力供需信号分类及 Fed/市场影响。
 
 ## [0.2.0] - 2026-05-02

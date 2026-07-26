@@ -3,7 +3,7 @@
 > 一组用于金融分析的 Claude Skills。每个 skill 是一个独立模块,可单独安装、组合使用。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Skills](https://img.shields.io/badge/Skills-3-blue)](./skills)
+[![Skills](https://img.shields.io/badge/Skills-4-blue)](./skills)
 
 ---
 
@@ -14,6 +14,7 @@
 | [`daily-portfolio-review`](./skills/daily-portfolio-review) | 每日证券账户复盘:盈亏归因、组合 Beta、Alpha 分解、当日新闻、催化剂日历、交易行为复盘 | ✅ v0.2.0 |
 | [`comex-delivery-analysis`](./skills/comex-delivery-analysis) | CME/COMEX 金属期货交割报告分析:Issuer / Client Short / House Short 三栏数据提取与市场结构判读 | ✅ Stable |
 | [`nfp-labor-market-analysis`](./skills/nfp-labor-market-analysis) | 美国非农 / Employment Situation 分析:企业调查与家庭调查拆分、失业率分解、劳动力供给/需求信号、Fed 与市场影响 | ✅ Stable |
+| [`us-weekly-cross-asset-recap`](./skills/us-weekly-cross-asset-recap) | 中文美股跨资产周报:指数、11 个行业板块、利率、美元、商品、加密、AI/软件轮动及下周催化剂 | ✅ v2.1.0 |
 
 > 后续会持续添加更多 skills,关注 [CHANGELOG](./CHANGELOG.md)。
 
@@ -37,6 +38,8 @@ cd Finance-Skill
 ./install.sh comex-delivery-analysis
 # 或
 ./install.sh nfp-labor-market-analysis
+# 或
+./install.sh us-weekly-cross-asset-recap
 ```
 
 ### 自定义安装路径
@@ -77,10 +80,12 @@ Finance-Skill/
     │       └── report-template.md
     ├── comex-delivery-analysis/
     │   └── SKILL.md
-    └── nfp-labor-market-analysis/
-        ├── SKILL.md
-        └── references/
-            └── nfp-framework.md
+    ├── nfp-labor-market-analysis/
+    │   ├── SKILL.md
+    │   └── references/
+    │       └── nfp-framework.md
+    └── us-weekly-cross-asset-recap/
+        └── SKILL.md
 ```
 
 ---
@@ -127,6 +132,19 @@ CME/COMEX 金属期货交割报告分析 skill,处理 Silver / Gold / Copper / P
 - Fed、美债/美元、美股、加密/黄金、行业轮动影响
 
 详见 [skills/nfp-labor-market-analysis/SKILL.md](./skills/nfp-labor-market-analysis/SKILL.md)。
+
+### `us-weekly-cross-asset-recap`
+
+面向主动交易者的中文美股跨资产周报 skill。覆盖:
+
+- 美股主要指数、11 个行业板块及市场宽度
+- 美债利率、美元、黄金、原油、BTC、VIX 与信用市场
+- AI 半导体、硬件、软件及 SaaS 轮动
+- 宏观市场状态判断与证据置信度
+- 下周宏观、Fed、全球央行及重点财报日历
+- 带触发条件、周期和失效条件的交易剧本
+
+详见 [skills/us-weekly-cross-asset-recap/SKILL.md](./skills/us-weekly-cross-asset-recap/SKILL.md)。
 
 ---
 
