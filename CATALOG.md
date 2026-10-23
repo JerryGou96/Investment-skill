@@ -24,3 +24,14 @@
 | [us-market-close-recap](us-market-close-recap/README.md) | 市场与宏观 | 美股市场级盘后日报 | 1.0.0 | local-framework |
 | [us-weekly-cross-asset-recap](us-weekly-cross-asset-recap/README.md) | 市场与宏观 | 周度美股跨资产总结与下周准备 | 2.1.1 | local-framework |
 | [yfinance-data](yfinance-data/README.md) | 数据与技术分析 | Yahoo Finance 数据获取辅助层 | 1.0.0 | local-import-origin-unconfirmed |
+
+## Finance 原始导入（待逐步整理）
+
+完整原仓库位于 [imports/Finance-Skill](imports/Finance-Skill/README.md)，保留来源、许可与历史；不加入默认安装列表。详见 [合并说明](docs/FINANCE-MERGE.md)。
+
+| 原始技能 | 处理方式 |
+|---|---|
+| [comex-delivery-analysis](imports/Finance-Skill/skills/comex-delivery-analysis/SKILL.md) | 保留新增的原始技能 |
+| [daily-portfolio-review](imports/Finance-Skill/skills/daily-portfolio-review/SKILL.md) | 与根目录维护版并存，供后续比较 |
+| [nfp-labor-market-analysis](imports/Finance-Skill/skills/nfp-labor-market-analysis/SKILL.md) | 与根目录维护版并存，供后续比较 |
+| [us-weekly-cross-asset-recap](imports/Finance-Skill/skills/us-weekly-cross-asset-recap/SKILL.md) | 与根目录维护版并存，供后续比较 |

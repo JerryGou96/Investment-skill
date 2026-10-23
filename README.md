@@ -2,6 +2,8 @@
 
 Jerry 的投资研究与交易框架技能库。每个技能独立一个文件夹，包含人可读的用途说明、Agent 执行规则、版本记录及来源说明。
 
+`Finance-Skill` 已合并到本仓库。后续统一在这里维护；Finance 的完整原始目录、MIT 许可及 Git 历史保留在 [imports/Finance-Skill](imports/Finance-Skill/README.md)，供后续逐步整理。同名技能的两个版本暂时分别保留。
+
 本次整理提供 20 个投资相关技能目录，覆盖公司研究、财报研究、市场宏观、组合复盘、交易框架及数据分析。包括个人框架、定制流程和注明来源的第三方改编；详细来源见各目录的 `ORIGIN.md`。
 
 ## 从哪里开始
@@ -9,6 +11,18 @@ Jerry 的投资研究与交易框架技能库。每个技能独立一个文件�
 - [完整技能目录](CATALOG.md)：按用途、分类和版本选择技能。
 - [版本与维护约定](docs/MAINTENANCE.md)：如何修改、验证和复用。
 - [本次迁移说明](docs/MIGRATION.md)：技能合并、改名及兼容路径。
+- [Finance 合并说明](docs/FINANCE-MERGE.md)：4 个原始技能、重复版本对照与历史保留方式。
+
+## 从 Finance 合入的原始技能
+
+| 技能 | 位置与处理方式 |
+|---|---|
+| COMEX 交割分析 | [comex-delivery-analysis](imports/Finance-Skill/skills/comex-delivery-analysis/SKILL.md)，保留原始版本 |
+| 每日账户复盘 | [Finance 原版](imports/Finance-Skill/skills/daily-portfolio-review/SKILL.md)，与根目录维护版并存 |
+| 非农分析 | [Finance 原版](imports/Finance-Skill/skills/nfp-labor-market-analysis/SKILL.md)，与根目录维护版并存 |
+| 跨资产周报 | [Finance 原版](imports/Finance-Skill/skills/us-weekly-cross-asset-recap/SKILL.md)，与根目录维护版并存 |
+
+Finance 导入目录暂不加入默认安装列表，也不覆盖已安装技能。需要复用原版时，复制对应技能的完整文件夹；以后再逐个比较、选择或合并。
 
 ## 常用入口
 
