@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "skills": {
+    "ai-infra-five-factor-investing": {
+      "version": "1.0.0",
+      "sha256": "2795819c44633f4ef2103b9913a37f1ac547fa40e81947c5210bef8b6c733cfa",
+      "files": {
+        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
+        "ORIGIN.md": "d9afeb1e892d2eb3ca1d514dfef20f650ecef8817aef0bef704e24bebe992e22",
+        "README.md": "1aa1ba423d7578d9944aa4a63d6cde6f24194206b9c9187660793b2fff2e8b16",
+        "SKILL.md": "78961edb0e1c424fcee7b2aa990d5b2e3183072626225956762eef33c09dc282",
+        "skill.json": "6a2c62c6dc62340e4b67196465b0a01719fc00fe7003871e54525ea2ec435598"
+      }
+    },
+    "analyze-equity-rotation": {
+      "version": "1.0.0",
+      "sha256": "0f5d4b66dc2a05534c7b24a998062395f027b3d29ebcbcdf80b28fdd4b8f9c35",
+      "files": {
+        "CHANGELOG.md": "67916d83332d7c994d5e30ac5473fa3aee0d0cc46a50d6ac65e51b88ecd48c77",
+        "ORIGIN.md": "3b311c2287523879f1a2fd82f2fab0eec380f7c74f6202f474988f1d7c16fcd7",
+        "README.md": "8edb45b0701413c9b0a54268e55c36e83a8ad4fd70884c91178defde62fb3f6f",
+        "SKILL.md": "d9490eb336e302702cff31e6312dc25a8d9d8926228bd0d2db743d4ec7e04759",
+        "agents/openai.yaml": "de3184e866262dcde63c87c76ee290c3d5cc770a78395ceb35979f00bf67204f",
+        "references/framework.md": "ee86f7d440f902da0698c92d7c648f1ccb4069f51acc1f430105800a89035577",
+        "references/output-template.md": "ba02524f1274e3cad5ae4df0f6bbe13d03312869c460fc0d12021d7b2279b84e",
+        "skill.json": "8cca5d1183a2d604b080ffbd5aeb909934831afc68374753033de270b302bf05"
+      }
+    },
+    "catalyst-calendar": {
+      "version": "1.0.0",
+      "sha256": "a00dda8578b4d36d25961cc101ebb96f717f8c8a6b683a26f35ebd1cb831a854",
+      "files": {
+        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
+        "ORIGIN.md": "44e53db383da8927e53469eacb305f88f0a22e9fa98d0a4c55e82cfca1acfd4a",
+        "README.md": "d9af038905f317e3c8319e834220a1d5e0dd6124361d81891de5e56ec4b443c3",
+        "SKILL.md": "fd158b92aae4c97a5bde7e98f78b0c80dd5f52a14029d9c67640cfc611b7c557",
+        "skill.json": "33e507d163fef227cfd2b2e693da7955afd44603957cc4d16f420c6967ee0f3d"
+      }
+    },
+    "daily-portfolio-review": {
+      "version": "1.0.0",
+      "sha256": "d8b0b21e30ee1493fbe5fa2f47d8bb0fdc9d7bbb75721519cb52d93b220ca9e1",
+      "files": {
+        "CHANGELOG.md": "8da2dc297aa68fe4a977f47be2e20498d35cbdfc4afb0f691865b1ecdff721e2",
+        "ORIGIN.md": "6b4876e4a7dbd78b0a8c621247e643aa8a29ad33d6208f7223e72cc9a022d336",
+        "README.md": "1248dc293bb57dd2c9502f4a234f3ac8e3aadeb589fb41c28da80f81f5b75d7b",
+        "SKILL.md": "4020511ffac24fafa582fcf1adf5089f9d211fb635bdb7761e2db78679ca7e4a",
+        "assets/report-template.md": "1499ee13720126caff0c2db5ffaf1b7faf00c92fe128bee073d989565994e99b",
+        "references/catalyst-types.md": "b93892549de3e8db6a2c223dbd6431ce7ee249914ddcb8979d5db6cbb30af247",
+        "references/gics-mapping.md": "b16b8dcfd3fbeb0bef95deac6c03e6901cb068e68f0b4b0cee65d557aede0037",
+        "references/review-core.md": "a3909bdc9a2ed69fba88cfe536007e043940f5792751facfa15f3b3986af32df",
+        "references/sector-mapping.md": "04d447bfeb271026a3d2284917fce0d3418739f71948952f3fe8da316188bd55",
+        "skill.json": "4020e5875a813bdaa07a2af6530e50149e4404e0b5a18b005006e53aca5396b9"
+      }
+    },
+    "earnings-day-after-trade": {
+      "version": "1.0.0",
+      "sha256": "fd80fd5423da2fb49c6ae5f7c55f2f9f42271c11e2f461707b44425760a6fd87",
+      "files": {
+        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
+        "ORIGIN.md": "be4c3ce4b187a8f820942a29942939f5de248acdf20dc0e44ff8b3b6fc425f18",
+        "README.md": "cc2993773a4746c81806a99713f72143631e3cf7c0dce3d5be1f1635b5cba84a",
+        "SKILL.md": "f046d83b7b09f8891e3dcd5557f0533a01e3a850625f3c973db46957d6c942a0",
+        "references/playbook.md": "c80240b36bf6f9d51613b3f2c309fefe2572499bad3ec25886ca6dd6168eb6ea",
+        "skill.json": "2d941dffc0e6e38afdba17697edf3881f98c4b00cb109ef0a2d575568b9f375b"
+      }
+    },
+    "earnings-recap": {
+      "version": "1.0.0",
+      "sha256": "954d88c6e5e5983729054ae494ede899510e5d9dec93fc851f036a5896b18b50",
+      "files": {
+        "CHANGELOG.md": "f55568a55a32d01cf6bfb66fb033b083041be7dcfb0ec5a344ddc74642866c1d",
+        "ORIGIN.md": "d18ad2adb65fa41a6292089ea40f19dc3136e413547049e018080223eea782d1",
+        "README.md": "5b5cff2b9fa199c8d0630150517beb7e879940dc424cf8c9a606920ebb086bde",
+        "SKILL.md": "61a6bc4c55a296418309e41644f2ece824c807df6fb8ae6e676f5e6c3bf55a55",
+        "references/api_reference.md": "3491bf9f703cdf4d1dd3844664fe5c114dc4b6a25f80da8c012e99b3e0ac58db",
+        "skill.json": "7f77d24dded9ed51c944996274168ad0bbd653174997a87aecb4310d27e2371e"
+      }
+    },
+    "financial-report-analyzer": {
+      "version": "1.0.0",
+      "sha256": "89e7d7a81839ea0de86ef3562c5942689f1ca7bd4013375b6f0acaf94c0a4325",
+      "files": {
+        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
+        "ORIGIN.md": "042ee8e1e2c816e75749f5af65f409da7d1f862ac707e4d2fc1c48e76fd8192e",
+        "README.md": "e8d9949e15928ee5b1360edb5f27357e8283f4766d52296156b2d40b8c18c949",
+        "SKILL.md": "f4807d85b735feff87e4fd357de007af9559cfd85470e82e022135884d9071ce",
+        "skill.json": "cde0ab6ed653a800e08dfdc1cba796d0b6b413a65f4b3fabcad79f18ecd29247"
+      }
+    },
+    "frank-trading-setups": {
+      "version": "1.0.0",
+      "sha256": "f661d1e538e7011e1f635007c91244658b363b52ac1c6eb3c86ab0e220f5a008",
+      "files": {
+        "CHANGELOG.md": "bcc0c97e14024ebf9f6b9be24dfeb4ed08a038ece408695bf462532a83bf2286",
+        "ORIGIN.md": "c7aca8bc7d7d792ac6b6a2b6608b010eb7a706fce3e11570e449410a0bea3b71",
+        "README.md": "8379bf4c3d0a8b14330a11c52ba568e5218497a87ed352fa9c3d8956d46ee907",
+        "SKILL.md": "88efd537120a99ff0b062dab4b6f81a2037c9a665e24b3b6e36ca73bf6def5a7",
+        "references/gap-retest.md": "855538b9798122fc0f8ed45d02c302b6a5e7ebf200f93e3092af15d83fe89b7b",
+        "references/range-breakout.md": "9d04dc732fe510622501dd3d1697d09425a9c6d93a9460eaaeeb79be850ba2be",
+        "skill.json": "474cd8ee0028444dde5b5317b43b21a087547191c44414427ef3a58e54719084"
+      }
+    },
+    "nfp-labor-market-analysis": {
+      "version": "1.0.0",
+      "sha256": "dec32c13309d432bbb997a9b9e7a64aa6bad75b4f1f9305d3598ba41dcefc608",
+      "files": {
+        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
+        "ORIGIN.md": "3ecd887dcf5870ce3ca5d479b2efcc11cc911bfdd29db5e2c98b4833b28ba563",
+        "README.md": "f9ab72ea1906e4fb157c61dd2d35981a226007b54caee9320b48e342667d5a2b",
+        "SKILL.md": "7e2f59385c10e7d4ac2f65f5343614e60171799850b696b633fd7c69c7903b5d",
+        "references/nfp-framework.md": "900cc886e99924e9702a4740e17a3ea79a165a51e1113c56d4aa63da5554a8ee",
+        "skill.json": "88397675e33736190e106cd8b2dbb12e0a08764b12e58b4370b9db0a5f5ba8e0"
+      }
+    },
+    "post-earnings-investment-review": {
+      "version": "1.0.0",
+      "sha256": "3db9ff95524adabe4f4344425f8f3d549680faa175d5c3c2c627e527df1460af",
+      "files": {
+        "CHANGELOG.md": "b12dc5d53d7a0bf538d3d737c684cb0bb297344a0d32587948728b50334eca37",
+        "ORIGIN.md": "15a13208335d2f8a7d7252247e56e289392d91f609b2e8d1541b5550edff983f",
+        "README.md": "9fb50fb11968af71094f73e627981531de2398e1fcefed98c41dd708f9728f08",
+        "SKILL.md": "02c0203d7576f486f96faa29e3b5c11ae840807391b239cf9a480891a16d21f3",
+        "references/api_reference.md": "3491bf9f703cdf4d1dd3844664fe5c114dc4b6a25f80da8c012e99b3e0ac58db",
+        "skill.json": "f7c4edb3f67d387a0a22a8618140a2c30b92358597e1f1494cfab7007e5ba7ec"
+      }
+    },
+    "saas-valuation-analyzer": {
+      "version": "1.0.0",
+      "sha256": "964e27cb2bb1c9d66cc11036c34a9b0e5b5c1a0e4331a5d6f17b6aee29c6122f",
+      "files": {
+        "CHANGELOG.md": "6e2e391c4d5f651877f891b6878f326950042bead2af5a313165a2d991f5d972",
+        "ORIGIN.md": "2146a425efc55e9ec47f703c92b16a3ab54989a6229b544d0acfe599f66f45fb",
+        "README.md": "2c60224c2b303db62868c62b5a21afca99ff00dbc69974323e82bcdaec3fecc8",
+        "SKILL.md": "32b02f64e3a739f266f6371f23438f8ed5cf79ddc8c1b95c8a036684b394cc4a",
+        "references/bvp_cloud_index_data.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "scripts/parse_bvp_data.py": "68cb0600493262667d704871489aefb451c8451d412d39a114ae51754bfc354c",
+        "skill.json": "5e4d6324e83b084e04bcdce386e9f4d205fae65991561136140f104265a8c62d"
+      }
+    },
+    "serenity-alpha": {
+      "version": "1.0.0",
+      "sha256": "6c52e770491ca278f165a7667c6d454c4251c21e25cb5854df65a1240ae4b0c4",
+      "files": {
+        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
+        "ORIGIN.md": "3afeb7fad84f3c9eda91c84b9ee863d079d0650acf90987863a5b1ca6b357e27",
+        "README.md": "b8562e5afb955c17117ead175f962227a25eeb9094392135667a4302623f7ae6",
+        "SKILL.md": "4070711233509f146f9d145f4005f71f453c9e0aa10928219ceb67e591cb838e",
+        "agents/openai.yaml": "e73e437a234fe2ecf87bc62b0b0d0562d6df9a5e6ef73e800b84143a8b54ca98",
+        "references/original-framework.md": "c2dab8d4612610b6713332c0ae2608945c5fd330bf6ba588289c226efb203ebf",
+        "skill.json": "2e1bac72d5fe7e68016165e476c4af4c374886179f223cba21e517a27dd6bc40"
+      }
+    },
+    "stock-correlation": {
+      "version": "1.0.0",
+      "sha256": "66831fe4219e5b37244b311ec9be3726f51b1da6338c759669756eb88dcaa14d",
+      "files": {
+        "CHANGELOG.md": "6aeea3fb8df8505bdebee65e56f39b8a757448c4b2fb361096a71f12e53273b7",
+        "ORIGIN.md": "3e36d6aad6a78bdd4b1920cf6fcbe2b8f936cce08bd74b221fe96f9dddf2bbec",
+        "README.md": "8995c39db854e357c12c968d06e977202b52ebf6378c0cfd473330cf26442f31",
+        "SKILL.md": "86fb7620e4c1c2ae8b6d6437198b484024f164f6ef63499714c0daef7c37887f",
+        "references/sector_universes.md": "7a3c06b416265a360bbcecb6020fec057deba282252fd19e4cd90b600c30f227",
+        "skill.json": "5888c3e42f67e0d8716e5baef1d95e89bc2beac396b3642aad9bad1c8c0e9250"
+      }
+    },
+    "summarizing-earnings-calls": {
+      "version": "1.0.0",
+      "sha256": "14446c98460eae2da7419487cec6d17e36802542da5cd8ed1a6ae42c9b5da17e",
+      "files": {
+        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
+        "ORIGIN.md": "00cf9e548616e4eefe9f1aa06f1494e1d8567ad9839bb0a70ca540565e6d2b38",
+        "README.md": "270c7f64368fbbe1edd11bb5d2f7b6fbc6e475a713622cee2e5ceb5cc589da9b",
+        "SKILL.md": "f897228379be9b7bf625809aebcbc6b86b32a9356b419975a2b22615305e9887",
+        "skill.json": "732cf81741b29b5c517ae0003766672faa0d565015f5616886ac94c01228070c"
+      }
+    },
+    "tech-earnings-deepdive": {
+      "version": "3.0.1",
+      "sha256": "7bd9c35b787df6739091c1d1b541d899ab96ae7b6325c48609afa241811532a2",
+      "files": {
+        "CHANGELOG.md": "e11a5cf26e48d04f23917e3b1d5951d2e41a3ef7aa1134dc4c11570a9d8dc506",
+        "FEATURES.html": "8a6589da39540c91dcebdc779b46c67988eed8702f29b7dce697c9a8203ee28c",
+        "ORIGIN.md": "1d1d30fe5ca524b6855f32b143b69b242a6614d5279c1d278404fdc8b305c728",
+        "README.md": "65b93871d706a68014a82b329459cef01ef32c502c7a474f3f0ce6e545e5ba84",
+        "SKILL.md": "f520c200e622385a879ccc3646e3c4c435c18de8a51e59b47fefd993d61bc344",
+        "config.json": "c42fea9353a679880ba81f7a317f502674ac912b794e60eff993293fc5715cff",
+        "modules/analyze.py": "070fa942a9cbb603de40cbce980d34ac81e577478509e2d2f79498843b19d7c7",
+        "modules/analyze_full.py": "0c5476dcdca35850a013582658d178e6e84ef3fbb6bde83692ced0632a222ecd",
+        "modules/batch_analysis.py": "39eff891f11130a4a210d813b7bb8ea9210971b41f38157bcc5c8049558a34f1",
+        "modules/bias_framework.py": "aecb6c7bf4e146ed19b4f30c914d8558dcfb22e95780dba9d78978197a9305a2",
+        "modules/complete_analysis.py": "2c4ca09ee5fbbcfccf8a2bf27ed509d5d12710d75dca95e80aaf01512fe08563",
+        "modules/evidence_search.py": "3b90f7ab3ec0d9976d10149185019bf76c8d4e56fb0a7a5167427a517244456a",
+        "modules/export_report.py": "297881b41d1b5f993e530a394700c8dccae097e9deacabd2f169e52864d65612",
+        "modules/fetch_data.py": "cf9849e90b905776229919fb7315c74f9df85df2927e8a5f9a678b84f61c80e1",
+        "modules/key_forces.py": "24ac7ae73c9422ee9114a33a62615b696cb49a2b5cdc4bb1c3303b5f2bb3c670",
+        "modules/perspectives.py": "2bfbb57d61c90fca6be1a7b754be1bff6d7ba9bb7c130ad4f8de13881cc38ec5",
+        "modules/perspectives_full.py": "546c9607e8eabe7a27fa16a16eb943e8cce1b61d39dc50feb32dacaba6eeeb35",
+        "modules/report.py": "5cd26eddb81dd514515868b221bd8b722a6a397125427ed4367ba043b1a98712",
+        "modules/valuation.py": "cb9ba7ad249774faf6fb91eb443db46271aa3ca44689a265e862de8e54dfe2b7",
+        "modules/valuation_full.py": "548d852254a83710cbb45e44c6b6a2b55952f977074cd68cda3cbdd4bbbb3305",
+        "modules/variant_view.py": "e4d5ec675d77cb5230e360115fa9e3eb4bd5ca55fe4d3319d7510c58c2366076",
+        "references/CHANGELOG.md": "804b24bbb20d61b8d965f6a1e9b77c76fa0576ee18a27a0f831e5aab4a255233",
+        "references/README.md": "e65a3f96205f68f22234114b03c0f284b8f60b5772e178c3776261cae25722b7",
+        "references/SHARE_GUIDE.md": "f0d3fcb8e1274298b44e7430e75d566de5db1b5d6c2bf1c4af51204c670b7dbd",
+        "run.sh": "427cd0d271a89cb447314ff550ecb3ad22c578bbe0e03fc4985ba239e90b17ca",
+        "skill.json": "50e152d2307d8f44675ae07ad5cc0f7e0241fb9c8e15ad7880b5be0b645758e2"
+      }
+    },
+    "technical-analysis": {
+      "version": "1.0.0",
+      "sha256": "54fe494e6d548cc542697c66dbfe59696b04decef8399f88bb68911898a5095b",
+      "files": {
+        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
+        "ORIGIN.md": "3911ae3e340b45aef35adafd9230dcd01c04f8ef64d4dbf3f06f7a5001699408",
+        "README.md": "195f2b0d0c668c6305103f6d897e63e2eaa958cb0922b7681a833eb8a897b4bb",
+        "SKILL.md": "2e6c6781fa72f0e841d9744b13caf342cfb8ff0f43558e846be5bd62961b6610",
+        "skill.json": "debd1f16a47d7a0cc5e01eba05e84ae433c036d4056dfcb6bd4eb446af379dd0"
+      }
+    },
+    "trading-review": {
+      "version": "1.0.0",
+      "sha256": "46d79157ebf7107cddeb62355fe08b712fcc8f13e40a7f78884955e29417dbb3",
+      "files": {
+        "CHANGELOG.md": "c8db98bcdbecfb5da422f58a3c94baef292c3e08080ff4a7db5b2ad876f4e469",
+        "ORIGIN.md": "b5528808911938c585219f8c101b9ed4a062f00a728d8823856786c53e5e51ff",
+        "README.md": "dfb0f5f91bbb97788158bfe815a93dd67fd6ff936af18aee35e486ac2ddd012f",
+        "SKILL.md": "a97cd5010e65a9b089d090f69c9431cbd2205b9033749e0f01f08e483ac7ed6d",
+        "config.example.json": "fdec3cc46dc6f28557e4c7a80e6648ba51c08c93ecdd7b67a6471252fde52224",
+        "scripts/read_account.py": "f11848611b7cb92fc77589ed0b61ff0a4efae62ee02699f3510c610dcd4231dc",
+        "skill.json": "0e72119731b161b56af2ba7b61ebc9d48b700a7d004a5e098b46a196389b912f"
+      }
+    },
+    "us-market-close-recap": {
+      "version": "1.0.0",
+      "sha256": "26a92a2939e3a0bbae5bae9b948829b920a59e8aff76923685d3886c117f8dd1",
+      "files": {
+        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
+        "ORIGIN.md": "5e39d136665981f1a2e6cfd9b3c3b2134558391e73f23d819ea5f880349d3122",
+        "README.md": "213fac91dc2a4927c96aad6e271ce221027be511125b0d8e801cd91fe08d392d",
+        "SKILL.md": "ee2847c96793a384bc951812eac46454ea25cb5e9cd12df09cc71d41bb41a121",
+        "skill.json": "79cab88d3c1f3e4399262a0a777554a55bf354c2e6eaaa67fd042a43587420ad"
+      }
+    },
+    "us-weekly-cross-asset-recap": {
+      "version": "2.1.1",
+      "sha256": "c63c60a49b3d9713a81072471211255325c60cdee16165692d098a98d057faa1",
+      "files": {
+        "CHANGELOG.md": "5ba00b65fd79a48ec8af7921d5ddc3d2950e1e5e492af6416cc3faa24b4c2b3c",
+        "ORIGIN.md": "94244fd534805d93bc3663adfb0b65646030912da79203aee5ecfc71b853dfc4",
+        "README.md": "f777bfd71a23ec82c0b2933e6e5756c51be108756ba7d864d3a8f0821f7f642a",
+        "SKILL.md": "9ffff64e592b7beae439e8427edacccf645c64ea558015eb1f968453303d7e5b",
+        "skill.json": "adf87ac539cd40736e5cad1b3c0d179cbcc2cd00f5d84bd2460603583cfd4b75"
+      }
+    },
+    "yfinance-data": {
+      "version": "1.0.0",
+      "sha256": "7eae8a15e8eb568dd8d9b714ea7b001ad38395b18e9a4ac98a2c9218a2dbd12f",
+      "files": {
+        "CHANGELOG.md": "8033ca0faf0601d5456141c7ed6bf2320849a0eda10396830c84ae30e5dfdea1",
+        "ORIGIN.md": "149b13bf5ffdc7a439640d1226b08c28991ac5a582c7356791d5d473476de8b3",
+        "README.md": "3b033a19636dc8619de5b6c4b47370e0b6b86d5370c826c82ae6a1fbbbe40bec",
+        "SKILL.md": "7d41f4acae0146a5cb9c5767c8fc56aa86a83b1981b2d364fe34c086561a433a",
+        "references/api_reference.md": "72f193a2daa4a69914cae87123dd8144105187742231c3c6819affedb7896aea",
+        "skill.json": "423274b24f5d6873dc6b62277fe4d47f175ed8d9e3b31ceee1b58c6218a4be52"
+      }
+    }
+  }
+}

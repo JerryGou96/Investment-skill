@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "us-market-close-recap",
+  "version": "1.0.0",
+  "summary": "美股市场级盘后日报",
+  "category": "市场与宏观",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "local-framework",
+    "evidence": "本地市场日报框架；现有文件未记录完整来源历史。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

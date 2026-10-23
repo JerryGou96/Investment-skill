@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "frank-trading-setups",
+  "version": "1.0.0",
+  "summary": "统一的放量区间突破与利好跳空回踩模型",
+  "category": "交易框架",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "attributed-framework-adaptation",
+    "evidence": "Frank Trading 2025-10-19 Substack 框架与本地实现笔记；保留来源说明，不复制付费文章全文。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

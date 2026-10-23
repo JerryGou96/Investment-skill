@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "daily-portfolio-review",
+  "version": "1.0.0",
+  "summary": "账户风险、盈亏归因与交易行为的完整复盘",
+  "category": "组合复盘",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "local-customization",
+    "evidence": "存在 Finance-Skill 源码副本；本地安装版包含账户边界与输出格式定制，原始来源/授权未在现有文件中明确。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

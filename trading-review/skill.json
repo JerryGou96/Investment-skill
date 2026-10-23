@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "name": "trading-review",
+  "version": "1.0.0",
+  "summary": "Tiger 只读数据接入与简洁交易复盘",
+  "category": "组合复盘",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [
+    "daily-portfolio-review"
+  ],
+  "runtime_requirements": [
+    "Python 3（标准库启动器）",
+    "已有 Tiger adapter 和其 .venv/tigeropen 环境"
+  ],
+  "origin": {
+    "kind": "local-integration",
+    "evidence": "本地 Tiger/Discord 定制流程；此次抽出共用复盘口径并外置机器配置。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

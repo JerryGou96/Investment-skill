@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "us-weekly-cross-asset-recap",
+  "version": "2.1.1",
+  "summary": "周度美股跨资产总结与下周准备",
+  "category": "市场与宏观",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "local-framework",
+    "evidence": "原文件已有 version: 2.1.0 及 hermes 元数据；未补造更早版本历史。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

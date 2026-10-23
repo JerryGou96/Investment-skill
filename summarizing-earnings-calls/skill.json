@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "summarizing-earnings-calls",
+  "version": "1.0.0",
+  "summary": "电话会正文、管理层口径与分析师 Q&A 摘要",
+  "category": "财报研究",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "third-party-adaptation",
+    "evidence": "原文件注明 https://agentskills.finance/skills/summarizing-earnings-calls ，并含 Jerry Defaults 本地定制。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

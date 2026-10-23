@@ -1,6 +1,6 @@
 ---
-name: ai-infra-five-factor-investing
-description: "Analyze AI infrastructure and semiconductor stocks with sector maps, five-factor conviction checks, and disciplined sizing."
+name: "ai-infra-five-factor-investing"
+description: "Analyze AI infra stocks with sector maps and five-factor conviction sizing."
 ---
 
 # AI Infra Five-Factor Investing
@@ -103,4 +103,4 @@ Risk rule:
 
 ## Memory Behavior
 
-If Jerry says this analysis is important, asks to remember it, or sends a durable research source, update the relevant AgentBrain note/tracker and today's workspace memory. For normal one-off summaries, do not auto-ingest unless the content is clearly durable specialist material or Jerry asks to save it.
+If Jerry says this analysis is important, asks to remember it, or sends a durable research source, use the user-configured notes destination when available. AgentBrain/workspace memory is an optional local integration; if none is configured, return the reusable note in the conversation. For normal one-off summaries, do not auto-ingest unless the content is clearly durable specialist material or Jerry asks to save it.

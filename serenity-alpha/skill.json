@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "serenity-alpha",
+  "version": "1.0.0",
+  "summary": "将新闻和需求变化转成可验证的投资研究假设",
+  "category": "公司研究",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "user-framework-adaptation",
+    "evidence": "本地 references/original-framework.md 保留用户资料 a.md 的精简框架；原始作者/许可未完整记录。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

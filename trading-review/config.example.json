@@ -1,0 +1,4 @@
+{
+  "tiger_api_dir": "/path/to/tiger_api",
+  "delivery": {"channel": "discord", "target": "YOUR_CHANNEL_ID"}
+}

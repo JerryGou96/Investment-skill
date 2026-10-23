@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "technical-analysis",
+  "version": "1.0.0",
+  "summary": "趋势、均线、RSI、MACD 与布林带分析",
+  "category": "数据与技术分析",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "local-import-origin-unconfirmed",
+    "evidence": "本地通用技术分析技能；未发现作者或许可声明。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

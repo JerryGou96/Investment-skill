@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "name": "tech-earnings-deepdive",
+  "version": "3.0.1",
+  "summary": "科技财报的多模块、多视角深度研究",
+  "category": "财报研究",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "bash",
+    "Python 3",
+    "jq",
+    "curl",
+    "yfinance 及所选 Python 模块的依赖；当前未锁定完整环境"
+  ],
+  "origin": {
+    "kind": "third-party-local-adaptation",
+    "evidence": "原作者 Ruby、Star；原项目 https://github.com/star23/Day1Global-Skills/；原技能自述 v3.0。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

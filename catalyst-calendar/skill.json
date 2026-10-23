@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "catalyst-calendar",
+  "version": "1.0.0",
+  "summary": "跟踪公司、行业、宏观及加密资产的未来催化剂",
+  "category": "市场与宏观",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "third-party-adaptation",
+    "evidence": "原 SKILL.md 明确注明改编自 Anthropic financial-services catalyst-calendar。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

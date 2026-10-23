@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "analyze-equity-rotation",
+  "version": "1.0.0",
+  "summary": "美股、风格及 AI 产业链轮动分析",
+  "category": "市场与宏观",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "existing-repository",
+    "evidence": "来自用户指定仓库最新 main；保留半导体设备相关增补。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

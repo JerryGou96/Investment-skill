@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "earnings-day-after-trade",
+  "version": "1.0.0",
+  "summary": "财报次日开盘区间交易计划",
+  "category": "交易框架",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "local-framework",
+    "evidence": "本地流程技能；具体交易框架原始作者未完整记录。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

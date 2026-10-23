@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "name": "post-earnings-investment-review",
+  "version": "1.0.0",
+  "summary": "保留 investment 定制的财报投资判断",
+  "category": "财报研究",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Python 3",
+    "yfinance",
+    "pandas",
+    "numpy（按所用计算需要）"
+  ],
+  "origin": {
+    "kind": "local-customization",
+    "evidence": "从 investment 的 earnings-recap 定制版独立命名，保留其估值和投资立场内容。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

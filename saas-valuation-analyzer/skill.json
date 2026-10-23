@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "saas-valuation-analyzer",
+  "version": "1.0.0",
+  "summary": "SaaS 估值、增长效率和经营指标分析",
+  "category": "公司研究",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "local-customization",
+    "evidence": "本地 SaaS 分析技能，参考 BVP Cloud Index；未找到技能作者/许可声明。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

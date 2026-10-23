@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "nfp-labor-market-analysis",
+  "version": "1.0.0",
+  "summary": "非农报告与劳动力市场结构分析",
+  "category": "市场与宏观",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "local-framework",
+    "evidence": "JJ-Macro 本地劳动市场框架；Finance-Skill 仓库副本与原共用版相同。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

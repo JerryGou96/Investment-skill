@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "name": "earnings-recap",
+  "version": "1.0.0",
+  "summary": "财报事实速览与股价反应",
+  "category": "财报研究",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Python 3",
+    "yfinance",
+    "pandas",
+    "numpy（按所用计算需要）"
+  ],
+  "origin": {
+    "kind": "local-import-origin-unconfirmed",
+    "evidence": "共用版与原 main 版相同，使用 yfinance；现有文件未标明技能原作者。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

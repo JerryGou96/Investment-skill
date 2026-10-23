@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "ai-infra-five-factor-investing",
+  "version": "1.0.0",
+  "summary": "AI 基建产业链与五因素投资框架",
+  "category": "公司研究",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "existing-repository-adaptation",
+    "evidence": "原仓库已有；SKILL.md 注明参考 Damnang 的 How I Invest in AI Infrastructure（2026-07-11）及本地研究框架。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

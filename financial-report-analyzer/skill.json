@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "financial-report-analyzer",
+  "version": "1.0.0",
+  "summary": "年报、季报的财务质量与比率分析",
+  "category": "财报研究",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "Agent 可用的网页/资料读取能力；使用最新信息时需联网核验"
+  ],
+  "origin": {
+    "kind": "local-import-origin-unconfirmed",
+    "evidence": "本地安装技能；现有文件未明确标注作者或许可。"
+  },
+  "license_status": "not-established-by-this-migration",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}
