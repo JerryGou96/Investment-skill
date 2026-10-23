@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "name": "daily-portfolio-review",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "账户风险、盈亏归因与交易行为的完整复盘",
   "category": "组合复盘",
   "maintainer": "JerryGou96",
@@ -11,9 +11,12 @@
   ],
   "origin": {
     "kind": "local-customization",
-    "evidence": "存在 Finance-Skill 源码副本；本地安装版包含账户边界与输出格式定制，原始来源/授权未在现有文件中明确。"
+    "evidence": "保留 Investment 的账户边界、输出格式、共用复盘口径和手续费修正；Finance 的报告模板、催化剂类型与板块映射均已包含且完全一致。",
+    "repository": "https://github.com/JerryGou96/Finance-Skill",
+    "commit": "ba2df58f27cd855dd1bb4461b79233d708e8e09f",
+    "path": "skills/daily-portfolio-review"
   },
-  "license_status": "not-established-by-this-migration",
+  "license_status": "Finance upstream declares MIT; upstream notice retained in LICENSE",
   "publication_status": "repository-managed",
   "baseline_date": "2026-10-23"
 }

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "name": "comex-delivery-analysis",
+  "version": "1.0.0",
+  "summary": "CME/COMEX 金属期货交割报告提取与集中度分析",
+  "category": "市场与宏观",
+  "maintainer": "JerryGou96",
+  "skill_dependencies": [],
+  "runtime_requirements": [
+    "PDF/表格读取能力；可选 Python 计算汇总与集中度",
+    "用户提供的交割报告及明确的品种、报告日期和月份"
+  ],
+  "origin": {
+    "kind": "finance-repository-import",
+    "repository": "https://github.com/JerryGou96/Finance-Skill",
+    "commit": "ba2df58f27cd855dd1bb4461b79233d708e8e09f",
+    "path": "skills/comex-delivery-analysis",
+    "evidence": "Finance-Skill 原始技能，执行说明原样保留；新增与本仓库一致的介绍、版本及来源文件。"
+  },
+  "license_status": "MIT — see LICENSE",
+  "publication_status": "repository-managed",
+  "baseline_date": "2026-10-23"
+}

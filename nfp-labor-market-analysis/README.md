@@ -48,3 +48,7 @@
 ## 来源和维护
 
 详见 [ORIGIN.md](ORIGIN.md)。更新时修改本技能，递增 `skill.json` 的版本，补充变更记录，再运行仓库校验；不要在不同 Agent 工作区各维护一个副本。
+
+## Finance 合并记录
+
+Finance 的 SKILL.md 与 references/nfp-framework.md 与现有维护版完全一致，合并为同一个根目录包。原始版权与许可见 [LICENSE](LICENSE)，来源提交及取舍见 [ORIGIN.md](ORIGIN.md)。

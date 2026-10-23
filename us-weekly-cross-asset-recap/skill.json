@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "name": "us-weekly-cross-asset-recap",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "summary": "周度美股跨资产总结与下周准备",
   "category": "市场与宏观",
   "maintainer": "JerryGou96",
@@ -11,9 +11,12 @@
   ],
   "origin": {
     "kind": "local-framework",
-    "evidence": "原文件已有 version: 2.1.0 及 hermes 元数据；未补造更早版本历史。"
+    "evidence": "保留 Investment 已修正的周度触发范围、有效关联技能及独立版本元数据；Finance 的周报分析正文已包含，正文差异仅为 Markdown 换行格式。",
+    "repository": "https://github.com/JerryGou96/Finance-Skill",
+    "commit": "ba2df58f27cd855dd1bb4461b79233d708e8e09f",
+    "path": "skills/us-weekly-cross-asset-recap"
   },
-  "license_status": "not-established-by-this-migration",
+  "license_status": "Finance upstream declares MIT; upstream notice retained in LICENSE",
   "publication_status": "repository-managed",
   "baseline_date": "2026-10-23"
 }

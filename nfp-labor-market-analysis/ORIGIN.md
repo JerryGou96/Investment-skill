@@ -1,11 +1,17 @@
 # 来源与本地改动
 
-JJ-Macro 本地劳动市场框架；Finance-Skill 仓库副本与原共用版相同。
+- 原仓库：[JerryGou96/Finance-Skill](https://github.com/JerryGou96/Finance-Skill)。
+- 来源提交：`ba2df58f27cd855dd1bb4461b79233d708e8e09f`。
+- 原始目录：`skills/nfp-labor-market-analysis/`。
+- 维护者及原始版权声明：JerryGou96，2026。
+- 来源仓库的 MIT LICENSE 原样保留在 [LICENSE](LICENSE)；此来源记录不为仓库内其他技能统一声明许可。
 
-维护者：JerryGou96。此字段表示本仓库维护责任，不表示所有底层框架均为原创。
+## 合并取舍
 
-本次改动：
+Finance 的 SKILL.md 与 references/nfp-framework.md 与现有维护版完全一致，合并为同一个根目录包。
 
-- 建立独立版本、用途说明、来源记录与复用文档；未补造更早发布历史。
+Finance 的同名技能不再保留第二个活动目录；后续只维护本文件夹。原版本可通过上述提交追溯。
 
-现有文件未提供足够信息以统一声明许可证；本次没有新增 blanket license，也没有更改现有作者声明。上游版本与本地 skill.json 的版本分开记录。
+## 版本
+
+本次从 1.0.0 递增到 1.0.1，记录来源、许可及包结构整理。SKILL.md 和已有运行资源保持不变。

@@ -7,12 +7,13 @@
 | [ai-infra-five-factor-investing](ai-infra-five-factor-investing/README.md) | 公司研究 | AI 基建产业链与五因素投资框架 | 1.0.0 | existing-repository-adaptation |
 | [analyze-equity-rotation](analyze-equity-rotation/README.md) | 市场与宏观 | 美股、风格及 AI 产业链轮动分析 | 1.0.0 | existing-repository |
 | [catalyst-calendar](catalyst-calendar/README.md) | 市场与宏观 | 跟踪公司、行业、宏观及加密资产的未来催化剂 | 1.0.0 | third-party-adaptation |
-| [daily-portfolio-review](daily-portfolio-review/README.md) | 组合复盘 | 账户风险、盈亏归因与交易行为的完整复盘 | 1.0.0 | local-customization |
+| [comex-delivery-analysis](comex-delivery-analysis/README.md) | 市场与宏观 | CME/COMEX 金属期货交割报告提取与集中度分析 | 1.0.0 | finance-repository-import |
+| [daily-portfolio-review](daily-portfolio-review/README.md) | 组合复盘 | 账户风险、盈亏归因与交易行为的完整复盘 | 1.0.1 | local-customization |
 | [earnings-day-after-trade](earnings-day-after-trade/README.md) | 交易框架 | 财报次日开盘区间交易计划 | 1.0.0 | local-framework |
 | [earnings-recap](earnings-recap/README.md) | 财报研究 | 财报事实速览与股价反应 | 1.0.0 | local-import-origin-unconfirmed |
 | [financial-report-analyzer](financial-report-analyzer/README.md) | 财报研究 | 年报、季报的财务质量与比率分析 | 1.0.0 | local-import-origin-unconfirmed |
 | [frank-trading-setups](frank-trading-setups/README.md) | 交易框架 | 统一的放量区间突破与利好跳空回踩模型 | 1.0.0 | attributed-framework-adaptation |
-| [nfp-labor-market-analysis](nfp-labor-market-analysis/README.md) | 市场与宏观 | 非农报告与劳动力市场结构分析 | 1.0.0 | local-framework |
+| [nfp-labor-market-analysis](nfp-labor-market-analysis/README.md) | 市场与宏观 | 非农报告与劳动力市场结构分析 | 1.0.1 | local-framework |
 | [post-earnings-investment-review](post-earnings-investment-review/README.md) | 财报研究 | 保留 investment 定制的财报投资判断 | 1.0.0 | local-customization |
 | [saas-valuation-analyzer](saas-valuation-analyzer/README.md) | 公司研究 | SaaS 估值、增长效率和经营指标分析 | 1.0.0 | local-customization |
 | [serenity-alpha](serenity-alpha/README.md) | 公司研究 | 将新闻和需求变化转成可验证的投资研究假设 | 1.0.0 | user-framework-adaptation |
@@ -22,16 +23,5 @@
 | [technical-analysis](technical-analysis/README.md) | 数据与技术分析 | 趋势、均线、RSI、MACD 与布林带分析 | 1.0.0 | local-import-origin-unconfirmed |
 | [trading-review](trading-review/README.md) | 组合复盘 | Tiger 只读数据接入与简洁交易复盘 | 1.0.0 | local-integration |
 | [us-market-close-recap](us-market-close-recap/README.md) | 市场与宏观 | 美股市场级盘后日报 | 1.0.0 | local-framework |
-| [us-weekly-cross-asset-recap](us-weekly-cross-asset-recap/README.md) | 市场与宏观 | 周度美股跨资产总结与下周准备 | 2.1.1 | local-framework |
+| [us-weekly-cross-asset-recap](us-weekly-cross-asset-recap/README.md) | 市场与宏观 | 周度美股跨资产总结与下周准备 | 2.1.2 | local-framework |
 | [yfinance-data](yfinance-data/README.md) | 数据与技术分析 | Yahoo Finance 数据获取辅助层 | 1.0.0 | local-import-origin-unconfirmed |
-
-## Finance 原始导入（待逐步整理）
-
-完整原仓库位于 [imports/Finance-Skill](imports/Finance-Skill/README.md)，保留来源、许可与历史；不加入默认安装列表。详见 [合并说明](docs/FINANCE-MERGE.md)。
-
-| 原始技能 | 处理方式 |
-|---|---|
-| [comex-delivery-analysis](imports/Finance-Skill/skills/comex-delivery-analysis/SKILL.md) | 保留新增的原始技能 |
-| [daily-portfolio-review](imports/Finance-Skill/skills/daily-portfolio-review/SKILL.md) | 与根目录维护版并存，供后续比较 |
-| [nfp-labor-market-analysis](imports/Finance-Skill/skills/nfp-labor-market-analysis/SKILL.md) | 与根目录维护版并存，供后续比较 |
-| [us-weekly-cross-asset-recap](imports/Finance-Skill/skills/us-weekly-cross-asset-recap/SKILL.md) | 与根目录维护版并存，供后续比较 |

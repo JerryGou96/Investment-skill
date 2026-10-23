@@ -47,3 +47,7 @@
 ## 来源和维护
 
 详见 [ORIGIN.md](ORIGIN.md)。更新时修改本技能，递增 `skill.json` 的版本，补充变更记录，再运行仓库校验；不要在不同 Agent 工作区各维护一个副本。
+
+## Finance 合并记录
+
+保留 Investment 已修正的周度触发范围、有效关联技能及独立版本元数据；Finance 的周报分析正文已包含，正文差异仅为 Markdown 换行格式。原始版权与许可见 [LICENSE](LICENSE)，来源提交及取舍见 [ORIGIN.md](ORIGIN.md)。

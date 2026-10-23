@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "name": "nfp-labor-market-analysis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "非农报告与劳动力市场结构分析",
   "category": "市场与宏观",
   "maintainer": "JerryGou96",
@@ -11,9 +11,12 @@
   ],
   "origin": {
     "kind": "local-framework",
-    "evidence": "JJ-Macro 本地劳动市场框架；Finance-Skill 仓库副本与原共用版相同。"
+    "evidence": "Finance 的 SKILL.md 与 references/nfp-framework.md 与现有维护版完全一致，合并为同一个根目录包。",
+    "repository": "https://github.com/JerryGou96/Finance-Skill",
+    "commit": "ba2df58f27cd855dd1bb4461b79233d708e8e09f",
+    "path": "skills/nfp-labor-market-analysis"
   },
-  "license_status": "not-established-by-this-migration",
+  "license_status": "Finance upstream declares MIT; upstream notice retained in LICENSE",
   "publication_status": "repository-managed",
   "baseline_date": "2026-10-23"
 }

@@ -37,20 +37,33 @@
         "skill.json": "33e507d163fef227cfd2b2e693da7955afd44603957cc4d16f420c6967ee0f3d"
       }
     },
-    "daily-portfolio-review": {
+    "comex-delivery-analysis": {
       "version": "1.0.0",
-      "sha256": "d8b0b21e30ee1493fbe5fa2f47d8bb0fdc9d7bbb75721519cb52d93b220ca9e1",
+      "sha256": "5d31e9b32f7f2a8bdaefb386af3cd50a363410f207767ca844b7c39c86329fee",
       "files": {
-        "CHANGELOG.md": "8da2dc297aa68fe4a977f47be2e20498d35cbdfc4afb0f691865b1ecdff721e2",
-        "ORIGIN.md": "6b4876e4a7dbd78b0a8c621247e643aa8a29ad33d6208f7223e72cc9a022d336",
-        "README.md": "1248dc293bb57dd2c9502f4a234f3ac8e3aadeb589fb41c28da80f81f5b75d7b",
+        "CHANGELOG.md": "4bf34824852de86b6edf2f0e7271f1ba46d90ed494873e024cd4ed904db9c271",
+        "LICENSE": "5c5f58205f5e991565d23f80f6a94d08e7fb959303da5ce0134c945b0b8b3fd3",
+        "ORIGIN.md": "d5b7b0235f4d0b2e806d54080491968dadf36733b6f2c341c3a95c37a1759e79",
+        "README.md": "e9df0ff8df5265c8213499f8bf32f34fec994749af36cc77ec782adb7d15b7bd",
+        "SKILL.md": "8e302943f78dda5b9afc67754dbbb05663f2562bb6e6c2e0a7884df148fa8c73",
+        "skill.json": "b3724eb945681e27614ffd27b156e57f20e63c37494006609c956b3420d560ec"
+      }
+    },
+    "daily-portfolio-review": {
+      "version": "1.0.1",
+      "sha256": "0b1c03e17f687b1e26298d7bc8cad20dec0436dc1199528064b29e9db913d787",
+      "files": {
+        "CHANGELOG.md": "c997cb44ad7327634d8cf7a015ea75498976a4cb855b2feda15d5b78fbb2c4d4",
+        "LICENSE": "5c5f58205f5e991565d23f80f6a94d08e7fb959303da5ce0134c945b0b8b3fd3",
+        "ORIGIN.md": "6b132cfe7edc06502d80f8b30475599be3300841e4e16adb3a559818211003cf",
+        "README.md": "d6e71e37f3574f38d0ca5b5c257bc18752198f264c22baa14ef63b7871bd6fca",
         "SKILL.md": "4020511ffac24fafa582fcf1adf5089f9d211fb635bdb7761e2db78679ca7e4a",
         "assets/report-template.md": "1499ee13720126caff0c2db5ffaf1b7faf00c92fe128bee073d989565994e99b",
         "references/catalyst-types.md": "b93892549de3e8db6a2c223dbd6431ce7ee249914ddcb8979d5db6cbb30af247",
         "references/gics-mapping.md": "b16b8dcfd3fbeb0bef95deac6c03e6901cb068e68f0b4b0cee65d557aede0037",
         "references/review-core.md": "a3909bdc9a2ed69fba88cfe536007e043940f5792751facfa15f3b3986af32df",
         "references/sector-mapping.md": "04d447bfeb271026a3d2284917fce0d3418739f71948952f3fe8da316188bd55",
-        "skill.json": "4020e5875a813bdaa07a2af6530e50149e4404e0b5a18b005006e53aca5396b9"
+        "skill.json": "a773a99ec6dbb472f1d23f6ac43033a45263d4c2717a3f9b265efcc818e78c24"
       }
     },
     "earnings-day-after-trade": {
@@ -102,15 +115,16 @@
       }
     },
     "nfp-labor-market-analysis": {
-      "version": "1.0.0",
-      "sha256": "dec32c13309d432bbb997a9b9e7a64aa6bad75b4f1f9305d3598ba41dcefc608",
+      "version": "1.0.1",
+      "sha256": "5ea57be0f8108781d7acd6bf660f35d522d7090d2a623c27c0e87398eafb9e1b",
       "files": {
-        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
-        "ORIGIN.md": "3ecd887dcf5870ce3ca5d479b2efcc11cc911bfdd29db5e2c98b4833b28ba563",
-        "README.md": "f9ab72ea1906e4fb157c61dd2d35981a226007b54caee9320b48e342667d5a2b",
+        "CHANGELOG.md": "e460840427780a1e110a1eec882e7c614e44783330e74db69b8b2dbc604bb31e",
+        "LICENSE": "5c5f58205f5e991565d23f80f6a94d08e7fb959303da5ce0134c945b0b8b3fd3",
+        "ORIGIN.md": "2c546b2d0ec64b0ea73c063731881053d773f30220d8388e742b608bdc5b84cf",
+        "README.md": "9ea094693d2dc9ab1974f7a9b3b3d230ba4d3f3111982186bfd7251ac5e18df9",
         "SKILL.md": "7e2f59385c10e7d4ac2f65f5343614e60171799850b696b633fd7c69c7903b5d",
         "references/nfp-framework.md": "900cc886e99924e9702a4740e17a3ea79a165a51e1113c56d4aa63da5554a8ee",
-        "skill.json": "88397675e33736190e106cd8b2dbb12e0a08764b12e58b4370b9db0a5f5ba8e0"
+        "skill.json": "01d4ccc48a43ffb5808c24a460771af48ca2470dd396f50a6cdfe7c026c6bf40"
       }
     },
     "post-earnings-investment-review": {
@@ -242,14 +256,15 @@
       }
     },
     "us-weekly-cross-asset-recap": {
-      "version": "2.1.1",
-      "sha256": "c63c60a49b3d9713a81072471211255325c60cdee16165692d098a98d057faa1",
+      "version": "2.1.2",
+      "sha256": "90788fa26125e1446c3afaa78a9922de69786e10fea6e428ed55e39f8d39db87",
       "files": {
-        "CHANGELOG.md": "5ba00b65fd79a48ec8af7921d5ddc3d2950e1e5e492af6416cc3faa24b4c2b3c",
-        "ORIGIN.md": "94244fd534805d93bc3663adfb0b65646030912da79203aee5ecfc71b853dfc4",
-        "README.md": "f777bfd71a23ec82c0b2933e6e5756c51be108756ba7d864d3a8f0821f7f642a",
+        "CHANGELOG.md": "45a40c2064ee0fd1a3800acbe94fa11b4c0b2d850d9b347676153e6cdc761b57",
+        "LICENSE": "5c5f58205f5e991565d23f80f6a94d08e7fb959303da5ce0134c945b0b8b3fd3",
+        "ORIGIN.md": "e3b4a777c41c21ce5e738a815080991a34939e34533d2c75aa972249fd2edaa5",
+        "README.md": "7548751cc0f688cf3bedff8ecae6760df62f00e8032d7b324d63bb0ac2927677",
         "SKILL.md": "9ffff64e592b7beae439e8427edacccf645c64ea558015eb1f968453303d7e5b",
-        "skill.json": "adf87ac539cd40736e5cad1b3c0d179cbcc2cd00f5d84bd2460603583cfd4b75"
+        "skill.json": "d68175037528ec19f0b1139ed3c3b748cd526da046a67d11f3ee118b45f72f26"
       }
     },
     "yfinance-data": {

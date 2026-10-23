@@ -52,3 +52,7 @@
 ## 来源和维护
 
 详见 [ORIGIN.md](ORIGIN.md)。更新时修改本技能，递增 `skill.json` 的版本，补充变更记录，再运行仓库校验；不要在不同 Agent 工作区各维护一个副本。
+
+## Finance 合并记录
+
+保留 Investment 的账户边界、输出格式、共用复盘口径和手续费修正；Finance 的报告模板、催化剂类型与板块映射均已包含且完全一致。原始版权与许可见 [LICENSE](LICENSE)，来源提交及取舍见 [ORIGIN.md](ORIGIN.md)。
