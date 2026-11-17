@@ -178,14 +178,14 @@
       }
     },
     "summarizing-earnings-calls": {
-      "version": "1.0.0",
-      "sha256": "14446c98460eae2da7419487cec6d17e36802542da5cd8ed1a6ae42c9b5da17e",
+      "version": "1.1.0",
+      "sha256": "38fe02b57d8c48b5d5068fd6737cd8624f262b1a0ff5ac7a2a52adfd689f5bd5",
       "files": {
-        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
+        "CHANGELOG.md": "f6255f4ae3eb2bf2680aa86cfc19da8b8d92911d3cd64e373662b5978145c408",
         "ORIGIN.md": "00cf9e548616e4eefe9f1aa06f1494e1d8567ad9839bb0a70ca540565e6d2b38",
         "README.md": "270c7f64368fbbe1edd11bb5d2f7b6fbc6e475a713622cee2e5ceb5cc589da9b",
-        "SKILL.md": "f897228379be9b7bf625809aebcbc6b86b32a9356b419975a2b22615305e9887",
-        "skill.json": "732cf81741b29b5c517ae0003766672faa0d565015f5616886ac94c01228070c"
+        "SKILL.md": "70fee92ab2554a84641a78b9a83570c67c3b2f0237f82d1ad84232b64551e11b",
+        "skill.json": "8228530f828ef30a234eecaa4cfcf6285f4b7bd66edbd1edba2b5734fb205dda"
       }
     },
     "tech-earnings-deepdive": {

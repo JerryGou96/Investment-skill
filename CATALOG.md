@@ -18,7 +18,7 @@
 | [saas-valuation-analyzer](saas-valuation-analyzer/README.md) | 公司研究 | SaaS 估值、增长效率和经营指标分析 | 1.0.0 | local-customization |
 | [serenity-alpha](serenity-alpha/README.md) | 公司研究 | 将新闻和需求变化转成可验证的投资研究假设 | 1.0.0 | user-framework-adaptation |
 | [stock-correlation](stock-correlation/README.md) | 数据与技术分析 | 收益率相关性、联动标的与滚动相关分析 | 1.0.0 | local-import-origin-unconfirmed |
-| [summarizing-earnings-calls](summarizing-earnings-calls/README.md) | 财报研究 | 电话会正文、管理层口径与分析师 Q&A 摘要 | 1.0.0 | third-party-adaptation |
+| [summarizing-earnings-calls](summarizing-earnings-calls/README.md) | 财报研究 | 电话会正文、管理层口径与分析师 Q&A 摘要 | 1.1.0 | third-party-adaptation |
 | [tech-earnings-deepdive](tech-earnings-deepdive/README.md) | 财报研究 | 科技财报的多模块、多视角深度研究 | 3.0.1 | third-party-local-adaptation |
 | [technical-analysis](technical-analysis/README.md) | 数据与技术分析 | 趋势、均线、RSI、MACD 与布林带分析 | 1.0.0 | local-import-origin-unconfirmed |
 | [trading-review](trading-review/README.md) | 组合复盘 | Tiger 只读数据接入与简洁交易复盘 | 1.0.0 | local-integration |
