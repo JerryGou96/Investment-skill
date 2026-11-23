@@ -245,14 +245,15 @@
       }
     },
     "us-market-close-recap": {
-      "version": "1.0.0",
-      "sha256": "26a92a2939e3a0bbae5bae9b948829b920a59e8aff76923685d3886c117f8dd1",
+      "version": "1.1.0",
+      "sha256": "c4cf344919bdaacb0ec0ae28f1d56f9ea20587ad9883171da2123ee2ce7ae1c6",
       "files": {
-        "CHANGELOG.md": "54fde5cdd501dd2e5619f6a872d88c4af301ee9678fb94af0d3e65e0e0e07538",
+        "CHANGELOG.md": "83a6fb7053ab325b99d07770053dc5821a3a53241aa32f20acd872add8be09d1",
         "ORIGIN.md": "5e39d136665981f1a2e6cfd9b3c3b2134558391e73f23d819ea5f880349d3122",
-        "README.md": "213fac91dc2a4927c96aad6e271ce221027be511125b0d8e801cd91fe08d392d",
-        "SKILL.md": "ee2847c96793a384bc951812eac46454ea25cb5e9cd12df09cc71d41bb41a121",
-        "skill.json": "79cab88d3c1f3e4399262a0a777554a55bf354c2e6eaaa67fd042a43587420ad"
+        "README.md": "5ebea5a814315c5e4b681909407e496882dc785772ae299ce30c87e51781045d",
+        "SKILL.md": "9ff8b24ae1eab5e054aba126717ba3f6cbef19c54919df455523e5f9b40978e1",
+        "references/CAUSAL-RECAP-CHECKLIST.md": "dc13ee2ac408f0782cdeada04cd20aa9a126c3119455436d801c81f91ed616b7",
+        "skill.json": "e7fc3230c8996905cb03f9ebd33c7604f7261d9dc446245d7022e642179426d0"
       }
     },
     "us-weekly-cross-asset-recap": {

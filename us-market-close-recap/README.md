@@ -14,7 +14,7 @@
 
 ## 会得到什么
 
-指数和技术面、11 板块、AI 硬件/软件/光互联、市场环境和次日观察。
+指数和技术面、11 板块、AI 硬件/软件/光互联、每日六只ETF交易风格（SPHB/IWF/MTUM/QUAL/IWD/SPLV）、市场环境和次日观察。行情优先 Yahoo Finance，Trade MCP 为实际可用时的备用。
 
 ## 使用示例
 
@@ -43,6 +43,7 @@
 - `ORIGIN.md`
 - `SKILL.md`
 - `skill.json`
+- `references/CAUSAL-RECAP-CHECKLIST.md`
 
 ## 来源和维护
 

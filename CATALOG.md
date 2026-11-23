@@ -22,6 +22,6 @@
 | [tech-earnings-deepdive](tech-earnings-deepdive/README.md) | 财报研究 | 科技财报的多模块、多视角深度研究 | 3.0.1 | third-party-local-adaptation |
 | [technical-analysis](technical-analysis/README.md) | 数据与技术分析 | 趋势、均线、RSI、MACD 与布林带分析 | 1.0.0 | local-import-origin-unconfirmed |
 | [trading-review](trading-review/README.md) | 组合复盘 | Tiger 只读数据接入与简洁交易复盘 | 1.0.0 | local-integration |
-| [us-market-close-recap](us-market-close-recap/README.md) | 市场与宏观 | 美股市场级盘后日报 | 1.0.0 | local-framework |
+| [us-market-close-recap](us-market-close-recap/README.md) | 市场与宏观 | 美股市场级盘后日报 | 1.1.0 | local-framework |
 | [us-weekly-cross-asset-recap](us-weekly-cross-asset-recap/README.md) | 市场与宏观 | 周度美股跨资产总结与下周准备 | 2.1.2 | local-framework |
 | [yfinance-data](yfinance-data/README.md) | 数据与技术分析 | Yahoo Finance 数据获取辅助层 | 1.0.0 | local-import-origin-unconfirmed |

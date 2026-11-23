@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "name": "us-market-close-recap",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "summary": "美股市场级盘后日报",
   "category": "市场与宏观",
   "maintainer": "JerryGou96",

@@ -1,126 +1,145 @@
 ---
 name: us-market-close-recap
-description: "生成美股盘后市场日报。用于盘后总结、日报、正式版、美股复盘。覆盖指数表现、SPY/QQQ技术面、11板块轮动、AI硬件、IGV/SaaS软件、光互联、宏观、Market Regime和下一交易日观察清单。周报/本周总结请使用 us-weekly-cross-asset-recap。"
+description: "生成中文美股盘后因果复盘：直接催化、资金放大机制、多日相对表现、风格因子、AI细分链、跨资产验证、技术位及下一交易日反证。用于盘后总结、市场日报、正式版、美股复盘与当日涨跌原因。账户复盘用daily-portfolio-review，周报用us-weekly-cross-asset-recap。"
 ---
 
-# US Market Close Recap
+# US Market Close Recap — 因果复盘版
 
-Use for Jerry's market-level after-close recap. This is not the account/portfolio P&L review.
+## 1. 任务与标准
 
-## Triggers
+Jerry 2026-11-05确认：不要只做行情播报。回答“为什么动、为什么动这么大、相对昨天什么变了、什么逻辑仍成立、下一步如何验证”。适用于上涨、下跌和震荡，禁止每次套用去杠杆故事。
 
-- "盘后总结"、"美股盘后"、"日报"、"正式版"、"今日市场复盘"
-- End-of-day market recap requests without portfolio screenshots or trade data
+用户提供的优秀复盘是结构与解释深度范例，不是无需核验的数据源；不得复制其中当日数字、机构引述、纪录或政治叙事到未来报告。账户持仓/P&L走daily-portfolio-review；周报走us-weekly-cross-asset-recap。C-晨报是另一工作流，不能代替独立市场核验。
 
-If the user provides holdings/trades/account screenshots, use `daily-portfolio-review` for the account-level review instead.
-If the user asks for a weekly recap, use `us-weekly-cross-asset-recap`.
+交付默认中文、顶部速读＋完整正文，Discord分节列表、无表格；长正文分条或随速读附MD，不将有用信息仅留在本地。完整报告保存在本workspace的daily-reviews/YYYY-MM-DD/。不重启TradingView或服务来仿照范例连数据；读取TradingView时先遵守tradingview-reader skill。
 
-## Data Sources
+验收：结论是有证据的解释，不是新闻堆叠；事实、机构归因、估算和助手推断可区分。
 
-Use current/live verification because market data changes:
+## 2. 先建证据，再写观点
 
-- Yahoo Finance daily data for ETFs, stocks, rates proxies, DXY, WTI, gold.
-- AP/Reuters or equivalent market wrap for index-level confirmation.
-- Official macro source when relevant: BEA, BLS, Fed, Treasury.
-- FedChirp / CME FedWatch / Fed futures for year-end policy-path framing when available.
-- AgentBrain for Jerry-specific themes and prior research.
+1. 使用本地行情恢复路径采集/读取当日数据，检查目标交易日、时间、errors与缓存。另取前两个交易日价格，必要时扩展至事件前一日及本周基点。旧报告只能作对比，不替代当日取数。
+2. 获取至少一篇可访问的当日完整市场报道，优先AP/Reuters或可靠同级媒体；交叉核对关键指数及新闻日期。受限时采用可访问的可靠全文并披露，不把搜索摘要升级为已核实全文。
+3. 最重要的2–4个催化剂追到公司公告、官方政策、经济数据或有明确出处的机构研究。区分已实施、拟议、竞选主张与市场担忧。新闻发布时间须早于其声称解释的行情；盘后公告不能解释同日盘中下跌。
+4. 另查资金流、杠杆与仓位证据。有则说明来源、截至时间、覆盖范围及估算方法；没有就写机制假设及待验证项，不能推断为已经发生的强制平仓。
+5. 建立source-notes.md：核心论点→来源URL/发布时间/抓取时间→对应摘录→事实或归因/估算/推断→支持证据与冲突。缺项进入limitations，不编造。
 
-Opening source line:
+来源开头只列实际使用的来源及时间，禁止固定声称用了AP、Reuters、FedWatch。涉及信用、概率、估值、历史纪录的证据同样需要来源；多家转载同一通讯社不算独立验证。
 
-`数据源: Yahoo Finance 日线(截至美股收盘)、AP/Reuters 市场报道、FedChirp/Fed futures 页面。若个别宏观/期货收盘口径与实时终端略有差异,以交易所终端为准。`
+验收：证据覆盖主要因果链；取数成功不等于新闻核验成功。
 
-## Output Style
+## 3. 数据与比较口径
 
-- Chinese by default.
-- Discord-friendly: numbered sections and bullets, no Markdown tables.
-- Direct, investment-focused, concise but complete.
-- Separate "trend still intact" from "short-term overbought / crowded".
-- Do not give mechanical buy/sell advice; give watch/discipline framing.
+### 行情数据源优先级（Jerry 2026-11-23）
 
-## Daily Template
+- **主渠道：Yahoo Finance**（可使用现有yfinance本地采集脚本）。**备用渠道：Trade MCP**。适用于指数/ETF、每日交易风格六只ETF及可覆盖的其他行情；watchlist的名单来源与行情数据源分开记录。
+- Yahoo请求失败、限流、缺字段、日期滞后或出现异常时，在已有有界重试后，发现并调用当前实际可用的Trade MCP行情工具补齐；不要仅因主渠道不可用而放弃整份报告。先确认工具及证券覆盖，不能把TradingView桌面接口或其他工具自动称为Trade MCP，也不能声称备用已连接或已验证，除非实际调用成功。
+- 备用取数核对symbol/交易所、币种、目标交易日、regular close与盘后、时区、复权及拆股。多日收益和技术指标优先使用同一来源的一整段一致序列；不得拼接两渠道不同口径的价格来制造累计收益或指标。
+- 每个补位字段记录实际来源、抓取时间、采用备用的原因。两源冲突时优先核对时点与口径，仍不能解释则披露差异及采用依据，不取平均、不静默覆盖。Trade MCP也不可用时交付已核实部分并标明缺项与下一步；不以旧日替代当日。
+- 此规则是数据源选择与失败恢复流程，不修改cron、模型、投递渠道，不自动安装或配置MCP。
 
-Title:
 
-`美股盘后总结｜YYYY-MM-DD`
+详细采集清单和质量门槛见 [references/CAUSAL-RECAP-CHECKLIST.md](references/CAUSAL-RECAP-CHECKLIST.md)。每类检查都应尝试；无数据具体标缺失，不能静默略去整类。
 
-### 1. 指数表现
+- 核心：SPY、QQQ、DIA、IWM、RSP、VIX；补S&P 500、Nasdaq Composite、Dow、Russell 2000现货，区分QQQ与纳指。MOVE可用时加入。
+- 技术：SPY/QQQ的Wilder RSI14、MACD(12,26,9)/Signal/Hist、成交量/此前20日均量及倍数、EMA8/21/50/200、当日高低。注明指标口径，EMA不写成SMA。
+- 广度与板块：11个GICS ETF强弱排名、上涨数量；有来源再写涨跌家数、新高新低、成分股均线广度。RSP/SPY用于观察权重集中度，不能替代所有广度指标。
+- 每日交易风格（固定必查六只）：SPHB（高β）、IWF（成长）、MTUM（动量）、QUAL（质量）、IWD（价值）、SPLV（低波动）。ARKK仅在创新成长主题相关时作为补充，不替代六只核心ETF，不称为纯粹风格因子。
+- 主题：AI存储、光互联、半导体/设备、数据中心/neocloud、电力/电气、云巨头/Mag7、软件IGV/SaaS；行情主线涉及时补crypto、金融、住宅、医疗及海外映射。
+- 跨资产：2Y/5Y/10Y/30Y收益率及bp、曲线、美元/DXY与USDJPY、WTI/Brent、金银、TLT/HYG和MOVE（能取则取）。HYG价格并不等同信用利差。
 
-Include:
+比较默认列“今日、昨日、两日累计”，有事件则补事件以来。两日复合收益=(1+r昨日)*(1+r今日)-1，或使用一致复权价格/基点；不得直接相加。行情回报与现金分红总回报区分。
 
-- SPY, QQQ, DIA, IWM, VIX: close and daily %.
-- Spot index supplement: S&P 500, Nasdaq, Dow, Russell 2000: level and daily %.
-- One-line conclusion: high-level market tone, e.g. high-level consolidation, narrow AI-led risk-on, broad risk-off.
+先核对symbol、交易所、资产身份、币种、拆股/合并、复权及regular-session/盘后时间。代码身份或公司行动不一致时，禁止计算跨日累计与未调整技术指标；有独立可信当日百分比可单列并标明来源。不能为凑表保留异常巨幅涨跌。
 
-### 2. 指数技术面
+验收：关键数字可复算；不同时间快照不强行当同一个收盘；相对少跌不是上涨或净流入。
 
-For SPY and QQQ include:
+## 4. 固定输出结构（内容随市场变化，不强凑原因数量）
 
-- RSI(14).
-- MACD / Signal / Hist.
-- Daily volume, 20-day average volume, volume multiple.
-- 8-day, 21-day, 50-day, 200-day EMAs.
-- Trend/risk interpretation: above/below key EMAs, overbought state, meaning of losing 8EMA/21EMA.
+### A. 标题＋一句话结论
+“YYYY-MM-DD复盘：从X到Y”。先说发生了何种变化、主驱动和置信度。例如轮动扩散、广泛risk-off、空头回补或盈利驱动上涨，但必须由证据支持。
+给3–5个决定性事实与结论，不把所有指标堆在顶部。
 
-### 3. 板块表现
+### B. 指数、情绪与多日背景
+列核心指数、等权、小盘、VIX/MOVE及今日/两日数据；判断昨日涨幅被回吐还是中期相对强弱延续。宣称“技术性调整/熊市”要注明对应高点和回撤口径。
+“史上最大”必须核验区间与定义：美元市值损失、百分比跌幅、成交额不能混用；市值蒸发不等于同额现金流出，重叠指数市值不能简单相加。
 
-Rank S&P 11 sector ETFs from strong to weak:
+### C. 为什么涨跌：触发因素与放大机制
+按重要性梳理实际证据支持的原因，每条包含：
+- 新发生/新被定价的信息及时间；
+- 影响盈利/订单/资本开支/融资成本/估值的传导链；
+- 最直接受影响的资产及价格证据；
+- 来源等级、反证或替代解释。
 
-- XLY, XLP, XLC, XLB, XLV, XLI, XLRE, XLK, XLU, XLF, XLE.
-- Name Strongest and Weakest.
-- Rotation signal: what money bought/sold, and whether this is AI/tech-led, defensive, value/cyclical, energy-led, etc.
-- If AI/semis matter, include SMH/SOXX and key AI names.
+分开写政策/宏观、财报与指引、个股事件、资金与市场结构。解释“为什么昨天与今天不同”时，要用时间线和多日价格检验，不仅说市场情绪变了。
+财报不能一律写“不及预期”：逐项区分实际值/共识、收入/EPS/利润率/订单、当季/指引，以及beat-but-sold。已兑现业绩好不代表未来预期未被下修。
 
-Mandatory light check:
+放大机制可包括保证金、杠杆ETF日内再平衡、波动率目标基金、CTA、期权对冲、散户与机构买卖；只有对应数据才能写成当日事实。名义敞口再平衡估计不是实际已执行净卖出，不相加有重叠的资金口径。VIX/成交量上升仅支持风险收缩推断，不能证明爆仓、dealer gamma方向或机构缺席。没有证据时仍交付价格与已核验催化剂，不填故事。
 
-- IGV/SaaS software. If IGV or representative SaaS names materially outperform/underperform QQQ/XLK, note whether this is software mispricing repair, AI-adaptation re-rating, or continuation/reversal of the popular `long hardware / short software` pair trade.
+### D. 每日交易风格：进攻、防御，还是短线修复
 
-### 4. 基本面环境: 市场在买什么、卖什么
+Jerry 2026-11-23明确要求：每次美股盘后总结必须独立输出本节，固定分析 **SPHB、IWF、MTUM、QUAL、IWD、SPLV**；保留其余因果复盘大框架与分析内容，不用这一节替代指数、板块或跨资产分析。
 
-Cover:
+**取数与展示**
+- 六只ETF依次代表高β、成长、动量、质量、价值、低波动。逐只列当日收盘、今日涨跌、前一交易日涨跌、两交易日复合收益；给出今日强弱排序。Discord用紧凑列表，MD附录可用表格。
+- 使用一致交易日期、常规收盘及复权口径，记录数据源、抓取时间与公司行动；不能把周末当交易日。原底稿脚本未覆盖的ETF须另取，禁止沿用昨天行情填空。
+- 有缺失仍保留该ETF并注明缺项/原因；缺失会影响哪一组比较要说清，不用0代替未知，不宣称六只覆盖完整。事件以来或5日比较按需要补充，不替代每日/两日对照。
 
-- Buy side: sectors/themes/chains bought and why.
-- Sell side: sectors/themes/chains sold and why.
-- Earnings/theme narrative: what the market actually traded today.
-- Distinguish medium-term thesis intact vs short-term profit-taking.
-- Include Jerry-specific themes when active: AI server, optical interconnect, MRVL/LITE/COHR/AAOI, AI power, crypto, SaaS/IGV.
+**必答四个问题**
+1. **风险偏好**：比较SPHB与SPLV的今日及两日收益差（百分点），判断进攻或防御相对占优；双方下跌时只说相对抗跌，不写资金流入。
+2. **成长还是价值**：比较IWF与IWD的今日及两日收益差（百分点），结合利率、盈利和板块证据解释。无证据时保留价格判断，不强行归因于降息或资金搬家。
+3. **动量是否延续、质量是否跟上**：分别分析MTUM、QUAL相对SPY的表现，以及MTUM与QUAL的多日变化。不得把MTUM简单等同科技、QUAL等同低波动；持仓重叠和行业权重会影响表现，ETF不是纯因子收益。
+4. **单日领先是否真正修复**：逐只核对两日累计，明确谁收复上一交易日跌幅、谁仅反弹、谁仍保有相对优势。两日修复不代表中期趋势反转；单日上涨不能证明空头回补或机构净买入。
 
-### 5. 宏观环境
+**固定结尾**
+- 一句话归纳当日风格状态：进攻扩散 / 防御占优 / 轮动 / 广泛降风险 / 分化待确认（按证据选择，不强贴标签）。
+- 给下一交易日的确认与反证：例如高β/成长继续领先且QUAL、RSP/IWM参与，支持扩散；高β反弹被吞没、等权转弱且VIX回升，则削弱修复判断。条件须结合当日证据，不设未经验证的固定阈值，不据此自动生成买卖指令。
+- ETF涨跌和相对收益是价格证据，不是资金净流量；没有独立流量、仓位或期权证据，不称为已确认强平、去杠杆或挤空。
 
-Include:
+### E. 板块和个股：按传导链，而非ticker清单
+先给11板块强弱与上涨数，再按事件相关链条分组。AI为主线时至少分存储、光互联、芯片/设备、数据中心/neocloud、电力/电气、云巨头；软件IGV单列比较。代表标的由当日实际证据选取，核验ticker，禁止把疑似主题代码直接当存在的ETF。
+每组写代表涨跌/多日累计、共同原因、公司特有事件、例外和风险。Mag7按支出方/供应方及现金流/融资依赖解释差异，但不将这些标签永久化。金融/crypto若遭连带冲击，区分业务敏感性推断与已证实保证金事件。
+IGV跑赢QQQ但仍跌，不能称“软件全面重估”；只有盈利/需求/预期证据才进一步判断AI适应或估值修复。
 
-- Rates: 10Y, 5Y, 30Y Treasury yields and daily move; TLT optional.
-- Dollar: DXY.
-- Oil: WTI, and whether oil was a key macro variable.
-- Gold: GC.
-- Fed expectations: year-end policy path / implied rate framing where possible.
-- Next trading day's important macro events.
+### F. 跨资产验证宏观解释
+用收益率曲线、美元、油、贵金属与信用方向检查上面的故事。短端降得更多是牛陡，不笼统写所有陡峭化都利多。收益率下降时，不把当天股票下跌直接归因于当日利率飙升；可以区分仍高的利率水平与当日变化。
+FedWatch概率标会议、时间和来源；自行用期货估算必须标“估算”与方法/假设，SOFR隐含利率不能直接当FOMC会议概率。油价因果没查清就明确留缺。
 
-### 6. 一句话 Market Regime
+### G. 综合判断＋技术位置
+明确Regime、与昨日相比改变的假设、仍成立的相对优势、被证伪的条件；区分基本面修正与短期仓位挤压，无法量化时不分配伪精确贡献比例。
+保留SPY/QQQ技术数据，正文突出有用位置，其余可放技术附录。超卖不等于底部；反弹不等于趋势修复；被动卖压可能集中释放不等于必然只持续一两天。
 
-Format:
+### H. 下一交易日：3–6个可验证条件
+每项给“事件/观察对象—时间或观察周期—触发—反证—交易含义”。优先重要数据、指引、政策实际落地、龙头价格、波动率与信用确认。官方日历优先，未核实不写成确定日程。
+把底部/延续判断写成条件，不凭名人看多看空定方向。观点冲突可列双方依据及待验证变量；引用人名、机构、具体预测需追溯原文。
 
-`Regime: ...`
+### I. 数据说明及完成范围
+注明来源、regular close/盘后/期货结算、抓取时间、复权、公司行动、缺项及矛盾数字。已知与未知分开，完整详细版不等于每个外部事实都已核验。
+未全时按任务原发布时间交付已核实部分及具体缺项/原因/已尝试/下一步/负责人/验证标准，不因无法取齐所有维度只发故障通知。不得暗改cron时间、模型、失败通知或投递渠道。
 
-Then explain next-session implications:
+## Jerry重点事件清单（2026-11-05新增）
 
-- Is the index trend still bullish?
-- Are RSI/MACD/volume supportive or stretched?
-- Is chasing attractive, or is waiting for 8dma/21dma pullback better?
-- Which sectors/themes must confirm continuation?
+每次复盘必须读取 `<workspace>/watchlists/jerry-priority-events-2026-11_2027-01.json`（覆盖至2027-01-31），不依赖聊天记忆。用户23项日期/窗口事件与4条持续主线是关注优先级，不是已核实事实；不排斥清单外重大突发。
 
-### 7. 观察清单/下一交易日重点
+- 采集前筛选今天、下一交易日（含期间周末/休市事件）、未来7天的事件及逾期待核事项。按官方交易日历确定下一交易日；窗口项不得擅自变成确定日期。
+- 每日报告固定加入“你的重点事件：今日回顾 / 下一交易日预告 / 未来7日”，放在C与H相关段落；每条包含事件ID、原定与最新日期、时间及美西时区、核验状态、预期/实际、市场反应、传导与反证。无事件仅在完成核对后说明，访问失败必须单独标出。
+- 4条持续主线（伊朗/霍尔木兹、俄乌、AI数据中心监管、美国财政）逐项检查；正文突出有实质变化者，其余用一行覆盖状态。不得把原图的政治结果、候选人姓名、45%容量、旧共识和加息概率当当前事实。
+- 临近事件优先官方核对，次级来源明确标注；区分会议本身与双边会面、法案/承诺与生效政策。宏观实际/最新共识/前值修订分开记录。盘后消息不能解释此前行情。
+- 核验后更新JSON对应条目的official_sources、last_checked_at、actual_outcome、latest_consensus、price_reaction_1d/5d与history；每个新数值含来源/时点/口径。保留user_date_label和原图，改期不覆盖原记录。未到观察窗口的5日反应留空，不用0代替未知。
+- 未确认的事件过日仍保留待核验；延期/取消/完成均需证据。按时交付已知信息和具体缺项，不因清单尚未核齐阻塞日报。
+- 此规则接入既有日报与其下一交易日预告，不代表已创建独立推送任务；不修改模型、cron或投递配置。超过清单期限标需续表，不以过期清单声称未来无事件。
 
-List 3-6 items:
+## 5. 交付前验收与保存
 
-- Key events/earnings/conferences.
-- Important technical levels.
-- Rotation checks.
-- Theme divergences or profit-taking to monitor.
-- Jerry-specific watch items.
+遵守本workspace harness，研究报告使用trading profile；source acquisition checkpoint后验证并accept证据manifest，再claim/发送。精确投递回执另存，重复投递先核对，不以内容生成成功代表送达。
+保存完整report.md、source-notes.md、数据JSON、coverage.md；覆盖检查使用references/CAUSAL-RECAP-CHECKLIST.md。render_market_close.py仅是行情技术底稿，不是完整因果报告；新增风格、多日、链条、资金流需要额外取数/研究，不能声称现有29项脚本已经覆盖。未取得字段写缺失，禁止伪造“已查”。
 
-## Implementation Notes
+完成标准：读者能知道“发生什么、为何这样、证据强弱、相对昨日变在哪里、下一步观察什么、何时推翻”。内容与投递分别验收；未解决的数据争议不阻止明确披露的合格部分报告。
 
-- Use yfinance for daily and weekly returns where possible.
-- For weekly performance, use the actual trading week. If Monday was a holiday, state that the week was shortened.
-- For spot index levels, use AP/Reuters or reliable market wrap if Yahoo ETF proxies are not enough.
-- For volatile claims and event dates, verify with live sources and include links when useful.
+## 已验证的本地行情恢复路径（2026-10-30）
+在 `当前 Agent 的 workspace` 先运行：
+```sh
+python3 scripts/market_close_data.py YYYY-MM-DD
+python3 scripts/render_market_close.py YYYY-MM-DD
+```
+日期必须使用当前实际交易日期。低并发yfinance批量拉取，最多两次尝试；仅复用同一日期、6小时内缓存，并在每个缓存字段保留原抓取时间。严禁以旧日替代当天。查看`daily-reviews/YYYY-MM-DD/market-data.json`的errors及date，再使用`market-close.md`。此脚本只生成价格/技术面基础稿，不证明新闻、日历和宏观因果已经核验；这些栏目仍按本skill补充或明确缺失。单一网页429不代表所有行情路径均失败。
+EMA与SMA不得混写；RSI使用Wilder算法。已通过2026-10-30全部29项行情及日期检查。
